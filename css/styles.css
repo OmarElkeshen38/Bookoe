@@ -202,3 +202,50 @@ input::placeholder {
     margin: 0;
 }
 
+
+/* --------------------------------------------------------------- */
+
+.sectionTitle h3 {
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: var(--main-color);
+}
+
+.sectionTitle p {
+    font-size: var(--text-small);
+}
+
+
+.offerBox {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.offerBox img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.offerData h2 {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.categories p {
+    background-color: var(--sub-bg);
+    color: var(--sub-color);
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: var(--text-small);
+}
+
+.offerDesc {
+    font-size: var(--text-small);
+}
+
+.offerData h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
