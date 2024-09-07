@@ -18,7 +18,7 @@
     --green-color: #FF764C;
     --sub-color: #6C5DD4;
     --sub-bg: #F1EEFF;
-    --text-small: 14px;
+    --text-small: 15px;
 }
 
 body {
@@ -146,16 +146,6 @@ input::placeholder {
 
 /* ------------------------------------------------------- */
 
-
-.servText h3 {
-    color: var(--main-color);
-}
-
-.servText p {
-    font-size: var(--text-small);
-}
-
-
 .header {
     height: 65vh;
 }
@@ -257,11 +247,20 @@ input::placeholder {
 }
 
 
+.servText h3 {
+    color: var(--main-color);
+}
+
+.servText p {
+    font-size: var(--text-small);
+}
+
+
+
 /* --------------------------------------------------------------- */
 
 .sectionTitle h3 {
     font-weight: bold;
-    font-size: 28px;
     letter-spacing: 1px;
     color: var(--main-color);
 }
@@ -274,6 +273,7 @@ input::placeholder {
 .offerBox {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .offerBox img {
@@ -284,7 +284,7 @@ input::placeholder {
 .offerData h2 {
     color: var(--main-color);
     font-weight: bold;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .categories p {
@@ -300,6 +300,5 @@ input::placeholder {
 }
 
 .offerData h5 {
-    font-size: 16px;
     font-weight: 500;
 }
