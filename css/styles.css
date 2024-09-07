@@ -18,13 +18,15 @@
     --green-color: #FF764C;
     --sub-color: #6C5DD4;
     --sub-bg: #F1EEFF;
-    --text-small: 13px;
+    --text-small: 14px;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
     scroll-behavior: smooth;
     height: 10000px;
+    direction: rtl;
 }
 
 input:focus,
@@ -60,18 +62,37 @@ input::placeholder {
     border-radius: 8px;
     font-weight: 500;
     padding: 8px 20px !important;
+    transition: all 0.3s;
+}
+
+.mainBtn:hover {
+    background-color: transparent;
+    color: var(--sub-color);
+    border: 1px solid var(--sub-color);
 }
 
 .subBtn {
-    background-color: var(--sub-bg);
+    background-color: transparent;
     color: var(--sub-color);
     font-size: var(--text-small);
+    border: 1px solid var(--sub-color);
     border-radius: 8px;
     font-weight: 500;
     padding: 8px 20px !important;
+    transition: all 0.3s;
+}
+
+.subBtn:hover {
+    background-color: var(--sub-color);
+    color: #fff;
+    border: none;
 }
 
 /* ----------------------- NAVBAR ----------------------------- */
+
+.logo {
+    min-width: 18%;
+}
 
 .imgLogo {
     background-color: var(--sub-color);
@@ -88,6 +109,43 @@ input::placeholder {
     font-size: var(--text-small);
 }
 
+.navbar-toggler i {
+    color: var(--main-color);
+}
+
+.navbar-toggler:focus,.navbar-toggler:active {
+    box-shadow: none;
+}
+
+.navbar form {
+    width: 60%;
+    border-radius: 8px;
+}
+
+.navbar form input {
+    border: none !important;
+    width: 100%;
+    padding: 0px 10px;
+}
+.navbar form input:focus {
+    border: none !important;
+    outline: none !important;
+}
+.navbar form .form-control {
+    border: none !important;
+    outline: none !important;
+}
+
+.form-control.border-0 {
+    border: none !important;
+}
+
+.searchIcon {
+    color: var(--sub-color);
+}
+
+/* ------------------------------------------------------- */
+
 
 .servText h3 {
     color: var(--main-color);
@@ -95,10 +153,6 @@ input::placeholder {
 
 .servText p {
     font-size: var(--text-small);
-}
-
-.searchIcon {
-    color: var(--sub-color);
 }
 
 
