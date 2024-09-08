@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>عالم الكتب | اكتشف أفضل الكتب والقصص لجميع الاهتمامات - شحن سريع ودفع آمن</title>
@@ -73,106 +74,114 @@
 
     <!-- ------------------------- HEADER ----------------------------- -->
 
-    <div class="container">
-        <header class="py-4">
-            <div class="row header">
-                <div class="col-lg-9">
-                    <div class="backToSchool p-5">
-                        <div class="w-75 d-flex flex-column gap-3">
-                            <p class="prg1">العودة الى الدراسة</p>
-                            <h2>خصم خاص 50%</h2>
-                            <h4>لمجتمع الطلبة الخاصه بنا</h4>
-                            <p class="text-black-50 desc">استفد الآن من خصم 50% على جميع منتجاتنا المصممة خصيصًا لمجتمع الطلبة، نحن هنا لدعمك في رحلتك الدراسية لا تفوت الفرصة.</p>
-                            <div class="d-flex gap-2">
-                                <button class="mainBtn d-flex align-items-center">
-                                    <i class="fa-solid fa-arrow-right ms-2"></i>
-                                    <span>احصل على الصفقة</span>
-                                </button>
-                                <button class="subBtn promosBtn">شاهد العروض الأخرى</button>
-                            </div>
+    <header class="container py-4">
+        <div class="row header">
+            <div class="col-lg-9 backToSchoolContainer">
+                <div class="backToSchool p-5">
+                    <div class="w-75 backToSchoolContent d-flex flex-column gap-3">
+                        <p class="prg1">العودة الى الدراسة</p>
+                        <h2>خصم خاص 50%</h2>
+                        <h4>لمجتمع الطلبة الخاصه بنا</h4>
+                        <p class="text-black-50 desc">استفد الآن من خصم 50% على جميع منتجاتنا المصممة خصيصًا لمجتمع
+                            الطلبة، نحن هنا لدعمك في رحلتك الدراسية لا تفوت الفرصة.</p>
+                        <div class="d-flex gap-2">
+                            <button class="mainBtn d-flex align-items-center">
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                                <span>احصل على الصفقة</span>
+                            </button>
+                            <button class="subBtn">شاهد العروض الأخرى</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="bestSeller p-3">
-                        <div class="bgBlur">
+            </div>
+            <div class="col-lg-3 bestSellerContainer">
+                <div class="bestSeller p-3">
+                    <div class="bgBlur">
+                        <img src="images/book1.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="bestSellerContent">
+                        <div class="b">
+                            <h3 class="text-white fw-bold mb-1">الأكثر مبيعًا</h3>
+                            <p class="text-white-50">المبيعات على أساس هذا الأسبوع</p>
+                        </div>
+                        <div class="bestSellerCover">
                             <img src="images/book1.jpg" class="w-100" alt="">
                         </div>
-                        <div class="bestSellerContent">
-                            <div class="b">
-                                <h3 class="text-white fw-bold mb-1">الأكثر مبيعًا</h3>
-                                <p class="text-white-50">المبيعات على أساس هذا الأسبوع</p>
-                            </div>
-                            <div class="bestSellerCover">
-                                <img src="images/book1.jpg" class="w-100" alt="">
-                            </div>
-                            <div class="book">
-                                <h4 class="text-white fw-bold mb-1">Just Breathe</h4>
-                                <p class="text-white-50">مغامرة علمية وكوميديا</>
-                            </div>
+                        <div class="book">
+                            <h4 class="text-white fw-bold mb-1">Just Breathe</h4>
+                            <p class="text-white-50">مغامرة علمية وكوميديا</>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row py-5">
-                <div class="col-lg-3">
-                    <div class="services d-flex align-items-center gap-3">
-                        <div class="icon">
-                            <i class="fa-solid fa-bolt"></i>
-                        </div>
-                        <div class="servText">
-                            <h3 class="fs-5 p-0 mb-1 fw-bold">تسليم سريع</h3>
-                            <p class="text-black-50 m-0 p-0">استمتع بخدمة التسليم السريع مع وصول طلباتك إلى باب منزلك في وقت قياسي.
-                            </p>
-                        </div>
+        </div>
+        <div class="row py-4">
+            <div class="col-lg-3 col-md-6 mt-2">
+                <div class="services d-flex align-items-center gap-3">
+                    <div class="icon">
+                        <i class="fa-solid fa-bolt"></i>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="services d-flex align-items-center gap-3">
-                        <div class="icon">
-                            <i class="fa-solid fa-lock"></i>
-                        </div>
-                        <div class="servText">
-                            <h3 class="fs-5 p-0 mb-1 fw-bold">الدفع الآمن</h3>
-                            <p class="text-black-50 m-0 p-0">نحن نلتزم بأعلى معايير الحماية لضمان أمان معلوماتك الشخصية والمالية
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="services d-flex align-items-center gap-3">
-                        <div class="icon">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                        </div>
-                        <div class="servText">
-                            <h3 class="fs-5 p-0 mb-1 fw-bold">أفضل جودة</h3>
-                            <p class="text-black-50 m-0 p-0">نحرص على تقديم منتجات مختارة بعناية لضمان حصولك على الأفضل.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="services d-flex align-items-center gap-3">
-                        <div class="icon">
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="servText">
-                            <h3 class="fs-5 p-0 mb-1 fw-bold">ضمان الإرجاع</h3>
-                            <p class="text-black-50 m-0 p-0">إذا لم تكن راضيًا عن مشترياتك لأي سبب، يمكنك إرجاعها بكل سهولة وراحة.
-                            </p>
-                        </div>
+                    <div class="servText">
+                        <h3 class="fs-5 p-0 mb-1 fw-bold">تسليم سريع</h3>
+                        <p class="text-black-50 m-0 p-0">استمتع بخدمة التسليم السريع مع وصول طلباتك إلى باب منزلك في
+                            وقت قياسي.
+                        </p>
                     </div>
                 </div>
             </div>
-        </header>
+            <div class="col-lg-3 col-md-6 mt-2">
+                <div class="services d-flex align-items-center gap-3">
+                    <div class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="servText">
+                        <h3 class="fs-5 p-0 mb-1 fw-bold">الدفع الآمن</h3>
+                        <p class="text-black-50 m-0 p-0">نحن نلتزم بأعلى معايير الحماية لضمان أمان معلوماتك الشخصية
+                            والمالية
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-2">
+                <div class="services d-flex align-items-center gap-3">
+                    <div class="icon">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <div class="servText">
+                        <h3 class="fs-5 p-0 mb-1 fw-bold">أفضل جودة</h3>
+                        <p class="text-black-50 m-0 p-0">نحرص على تقديم منتجات مختارة بعناية لضمان حصولك على الأفضل.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-2">
+                <div class="services d-flex align-items-center gap-3">
+                    <div class="icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="servText">
+                        <h3 class="fs-5 p-0 mb-1 fw-bold">ضمان الإرجاع</h3>
+                        <p class="text-black-50 m-0 p-0">إذا لم تكن راضيًا عن مشترياتك لأي سبب، يمكنك إرجاعها بكل
+                            سهولة وراحة.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <section class="container py-5">
-            <div class="sectionTitle w-50 m-auto text-center">
-                <h3>العروض الخاصة</h3>
-                <p class="text-black-50">استفد من العروض الحصرية لدينا! نقدم لك خصومات رائعة وتخفيضات على مجموعة مختارة من الكتب. اكتشف الكتب التي تحبها بأسعار لا تُفوت</p>
-            </div>
-            <div class="row py-4">
-                <div class="col-lg-4">
+    <!-- -------------------Offers--------------------------- -->
+
+    <section class="container py-5">
+        <div class="sectionTitle w-50 m-auto text-center">
+            <h3>العروض الخاصة</h3>
+            <p class="text-black-50">استفد من العروض الحصرية لدينا! نقدم لك خصومات رائعة وتخفيضات على مجموعة مختارة
+                من الكتب. اكتشف الكتب التي تحبها بأسعار لا تُفوت</p>
+        </div>
+
+        <div class="swiper mySwiper1 px-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <div class="border offerBox">
                         <div class="offerImg">
                             <img src="images/offer1.jpg" class="w-100" alt="book cover">
@@ -184,19 +193,24 @@
                                 <p>thriller</p>
                                 <p>horror</p>
                             </div>
-                            <p class="offerDesc">تسرد حياة سكان حي قديم في القاهرة من خلال قصة دينية رمزية تطرح قضايا فلسفية واجتماعية. تتناول الرواية صراعات الإنسان مع قوى الخير والشر في إطار اجتماعي وثقافي.</p>
+                            <p class="offerDesc">تسرد حياة سكان حي قديم في القاهرة من خلال قصة دينية رمزية تطرح قضايا
+                                فلسفية واجتماعية. تتناول الرواية صراعات الإنسان مع قوى الخير والشر في إطار اجتماعي
+                                وثقافي.</p>
                             <h5>نجيب محفوظ</h5>
                             <div class="d-flex justify-content-between align-items-center">
                                 <button class="mainBtn">
                                     <i class="fa-solid fa-cart-shopping ms-2"></i>
                                     <span>أضف إلى السلة</span>
                                 </button>
-                                <h5 class="fw-bold">$ 18,78</h5>
+                                <div class="d-flex gap-2">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">25 $</p>
+                                    <h5 class="fw-bold">18,78 $</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="swiper-slide">
                     <div class="border offerBox">
                         <div class="offerImg">
                             <img src="images/offer2.jpg" class="w-100" alt="book cover">
@@ -208,19 +222,24 @@
                                 <p>thriller</p>
                                 <p>horror</p>
                             </div>
-                            <p class="offerDesc">تسرد حياة سكان حي قديم في القاهرة من خلال قصة دينية رمزية تطرح قضايا فلسفية واجتماعية. تتناول الرواية صراعات الإنسان مع قوى الخير والشر في إطار اجتماعي وثقافي.</p>
+                            <p class="offerDesc">تسرد حياة سكان حي قديم في القاهرة من خلال قصة دينية رمزية تطرح قضايا
+                                فلسفية واجتماعية. تتناول الرواية صراعات الإنسان مع قوى الخير والشر في إطار اجتماعي
+                                وثقافي.</p>
                             <h5>نجيب محفوظ</h5>
                             <div class="d-flex justify-content-between align-items-center">
                                 <button class="mainBtn">
                                     <i class="fa-solid fa-cart-shopping ms-2"></i>
                                     <span>أضف إلى السلة</span>
                                 </button>
-                                <h5 class="fw-bold">$ 18,78</h5>
+                                <div class="d-flex gap-2">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">25 $</p>
+                                    <h5 class="fw-bold">18,78 $</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="swiper-slide">
                     <div class="border offerBox">
                         <div class="offerImg">
                             <img src="images/offer3.jpg" class="w-100" alt="book cover">
@@ -232,22 +251,384 @@
                                 <p>thriller</p>
                                 <p>horror</p>
                             </div>
-                            <p class="offerDesc">تسرد حياة سكان حي قديم في القاهرة من خلال قصة دينية رمزية تطرح قضايا فلسفية واجتماعية. تتناول الرواية صراعات الإنسان مع قوى الخير والشر في إطار اجتماعي وثقافي.</p>
+                            <p class="offerDesc">تسرد حياة سكان حي قديم في القاهرة من خلال قصة دينية رمزية تطرح قضايا
+                                فلسفية واجتماعية. تتناول الرواية صراعات الإنسان مع قوى الخير والشر في إطار اجتماعي
+                                وثقافي.</p>
                             <h5>نجيب محفوظ</h5>
                             <div class="d-flex justify-content-between align-items-center">
                                 <button class="mainBtn">
                                     <i class="fa-solid fa-cart-shopping ms-2"></i>
                                     <span>أضف إلى السلة</span>
                                 </button>
-                                <h5 class="fw-bold">$ 18,78</h5>
+                                <div class="d-flex gap-2">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">25 $</p>
+                                    <h5 class="fw-bold">18,78 $</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="border offerBox">
+                        <div class="offerImg">
+                            <img src="images/offer1.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="offerData p-3">
+                            <h2>أولاد حارتنا</h2>
+                            <div class="categories d-flex gap-2">
+                                <p>biography</p>
+                                <p>thriller</p>
+                                <p>horror</p>
+                            </div>
+                            <p class="offerDesc">تسرد حياة سكان حي قديم في القاهرة من خلال قصة دينية رمزية تطرح قضايا
+                                فلسفية واجتماعية. تتناول الرواية صراعات الإنسان مع قوى الخير والشر في إطار اجتماعي
+                                وثقافي.</p>
+                            <h5>نجيب محفوظ</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="mainBtn">
+                                    <i class="fa-solid fa-cart-shopping ms-2"></i>
+                                    <span>أضف إلى السلة</span>
+                                </button>
+                                <div class="d-flex gap-2">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">25 $</p>
+                                    <h5 class="fw-bold">18,78 $</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="border offerBox">
+                        <div class="offerImg">
+                            <img src="images/offer2.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="offerData p-3">
+                            <h2>أولاد حارتنا</h2>
+                            <div class="categories d-flex gap-2">
+                                <p>biography</p>
+                                <p>thriller</p>
+                                <p>horror</p>
+                            </div>
+                            <p class="offerDesc">تسرد حياة سكان حي قديم في القاهرة من خلال قصة دينية رمزية تطرح قضايا
+                                فلسفية واجتماعية. تتناول الرواية صراعات الإنسان مع قوى الخير والشر في إطار اجتماعي
+                                وثقافي.</p>
+                            <h5>نجيب محفوظ</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="mainBtn">
+                                    <i class="fa-solid fa-cart-shopping ms-2"></i>
+                                    <span>أضف إلى السلة</span>
+                                </button>
+                                <div class="d-flex gap-2">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">25 $</p>
+                                    <h5 class="fw-bold">18,78 $</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                ...
             </div>
-        </section>
-    </div>
+            <div class="swiper-pagination"></div>
 
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+        </div>
+    </section>
+
+    <!-- ----------------------flashSale---------------------------- -->
+
+    <section class="container py-5">
+        <div class="sectionTitle w-50 m-auto text-center">
+            <h3>العروض الجديدة</h3>
+            <p class="text-black-50">تابع أحدث العروض لدينا وكن أول من يستفيد من الخصومات والتخفيضات الجديدة على الكتب.
+                نقدم لك تشكيلة متنوعة من الكتب بأسعار خاصة</p>
+        </div>
+
+        <div class="countdown my-3 d-flex justify-content-center align-items-center gap-5">
+            <div>
+                <h2 class="m-0 p-0" id="days">3</h2>
+                <p class="m-0 p-0">يوم</p>
+            </div>
+            <div>
+                <h2 class="m-0 p-0" id="hours">00</h2>
+                <p class="m-0 p-0">ساعة</p>
+            </div>
+            <div>
+                <h2 class="m-0 p-0" id="minutes">00</h2>
+                <p class="m-0 p-0">دقيقة</p>
+            </div>
+            <div>
+                <h2 class="m-0 p-0" id="seconds">00</h2>
+                <p class="m-0 p-0">ثانية</p>
+            </div>
+        </div>
+
+        
+
+        <div class="row py-4">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="saleBox">
+                    <div class="saleImg">
+                        <img src="images/book1.jpg" class="w-100" alt="book cover">
+                    </div>
+                    <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                        <div class="text-center">
+                            <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                            <p class="m-0 p-0 category">دراما كوميدي</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                            <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="saleBox">
+                    <div class="saleImg">
+                        <img src="images/book1.jpg" class="w-100" alt="book cover">
+                    </div>
+                    <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                        <div class="text-center">
+                            <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                            <p class="m-0 p-0 category">دراما كوميدي</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                            <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="saleBox">
+                    <div class="saleImg">
+                        <img src="images/book1.jpg" class="w-100" alt="book cover">
+                    </div>
+                    <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                        <div class="text-center">
+                            <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                            <p class="m-0 p-0 category">دراما كوميدي</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                            <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="saleBox">
+                    <div class="saleImg">
+                        <img src="images/book1.jpg" class="w-100" alt="book cover">
+                    </div>
+                    <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                        <div class="text-center">
+                            <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                            <p class="m-0 p-0 category">دراما كوميدي</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                            <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="saleBox">
+                    <div class="saleImg">
+                        <img src="images/book1.jpg" class="w-100" alt="book cover">
+                    </div>
+                    <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                        <div class="text-center">
+                            <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                            <p class="m-0 p-0 category">دراما كوميدي</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                            <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="saleBox">
+                    <div class="saleImg">
+                        <img src="images/book1.jpg" class="w-100" alt="book cover">
+                    </div>
+                    <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                        <div class="text-center">
+                            <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                            <p class="m-0 p-0 category">دراما كوميدي</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                            <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-4">
+        <div class="onSaleTitle">
+            <h2>كتب في الخصومات</h2>
+        </div>
+
+        <div class="swiper mySwiper2 px-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="saleImg">
+                            <img src="images/book1.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                            <div class="text-center">
+                                <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                                <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="saleImg">
+                            <img src="images/book1.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                            <div class="text-center">
+                                <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                                <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="saleImg">
+                            <img src="images/book1.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                            <div class="text-center">
+                                <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                                <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="saleImg">
+                            <img src="images/book1.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                            <div class="text-center">
+                                <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                                <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="saleImg">
+                            <img src="images/book1.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                            <div class="text-center">
+                                <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                                <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="saleImg">
+                            <img src="images/book1.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                            <div class="text-center">
+                                <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                                <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="saleImg">
+                            <img src="images/book1.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                            <div class="text-center">
+                                <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                                <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="saleImg">
+                            <img src="images/book1.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-center gap-2 p-2">
+                            <div class="text-center">
+                                <h3 class="m-0 p-0">اولاد حارتنا</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                                <h4 class="m-0 p-0 newSalary">76.12 $</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+        </div>
+
+    </section>
+
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

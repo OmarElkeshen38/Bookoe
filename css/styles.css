@@ -25,7 +25,7 @@ body {
     font-family: "Zain", sans-serif;
     font-weight: 400;
     scroll-behavior: smooth;
-    height: 10000px;
+    /* height: 3000px; */
     direction: rtl;
 }
 
@@ -113,7 +113,8 @@ input::placeholder {
     color: var(--main-color);
 }
 
-.navbar-toggler:focus,.navbar-toggler:active {
+.navbar-toggler:focus,
+.navbar-toggler:active {
     box-shadow: none;
 }
 
@@ -127,10 +128,12 @@ input::placeholder {
     width: 100%;
     padding: 0px 10px;
 }
+
 .navbar form input:focus {
     border: none !important;
     outline: none !important;
 }
+
 .navbar form .form-control {
     border: none !important;
     outline: none !important;
@@ -237,6 +240,7 @@ input::placeholder {
     min-height: 150px;
     max-height: 180px;
 }
+
 .bestSellerContent h4 {
     font-size: 18px;
 }
@@ -257,7 +261,7 @@ input::placeholder {
 
 
 
-/* --------------------------------------------------------------- */
+/* -------------------------------Offers-------------------------------- */
 
 .sectionTitle h3 {
     font-weight: bold;
@@ -301,4 +305,97 @@ input::placeholder {
 
 .offerData h5 {
     font-weight: 500;
+}
+
+/* -------------------------------freshSale-------------------------------- */
+
+.countdown {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 12px 22px;
+    border-radius: 8px;
+    border: 1px solid #0000003f;
+}
+
+.countdown h2 {
+    color: var(--green-color);
+    font-weight: 800;
+    font-size: 38px;
+}
+
+.saleImg img {
+    border-radius: 8px;
+    max-height: 230px !important;
+}
+
+.saleData h3 {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.saleData .category {
+    color: var(--sub-color);
+    font-size: var(--text-small);
+}
+
+.saleData .newSalary {
+    color: var(--sub-color);
+    font-weight: 800;
+}
+
+.oldSalary {
+    text-decoration: line-through;
+}
+
+/* --------------------------------------------------------------- */
+
+.onSaleTitle h2 {
+    font-weight: 800;
+}
+
+
+
+/* ----------------------------------responsive------------------------ */
+
+
+@media (max-width:995px) {
+    .backToSchoolContainer {
+        width: 100% !important;
+    }
+
+    .bestSellerContainer {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .backToSchool {
+        padding: 22px 20px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .backToSchoolContent {
+        width: 100% !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sectionTitle {
+        width: 75% !important;
+    }
+}
+
+@media (max-width:577px) {
+    .saleImg {
+        width: 50% !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:450px) {
+    .sectionTitle {
+        width: 90% !important;
+    }
 }
