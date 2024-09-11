@@ -20,7 +20,7 @@ function startCountdown(durationInDays) {
     document.getElementById("minutes").innerText = String(minutes).padStart(
       2,
       "0"
-    );
+    );  
     document.getElementById("seconds").innerText = String(seconds).padStart(
       2,
       "0"
@@ -100,18 +100,34 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,
 
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper2Paginatiion",
     },
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".nextBtn",
+      prevEl: ".prevBtn",
     },
 
     scrollbar: {
       el: ".swiper-scrollbar",
     },
   });
+});
+
+var swiper = new Swiper(".mySwiper3", {
+  effect: "cube",
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  loop: true,
+  // autoplay: true,
 });
 
 // const emblaNode = document.querySelector(".embla");

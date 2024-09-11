@@ -325,7 +325,8 @@ input::placeholder {
 
 .saleImg img {
     border-radius: 8px;
-    max-height: 230px !important;
+    min-height: 250px !important;
+    /* max-height: 230px !important; */
 }
 
 .saleData h3 {
@@ -349,11 +350,81 @@ input::placeholder {
 
 /* --------------------------------------------------------------- */
 
+.onSaleTitle {
+    position: relative;
+}
+
 .onSaleTitle h2 {
     font-weight: 800;
 }
 
+.swiper2Paginatiion {
+    position: relative;
+}
 
+.swiperControl i {
+    font-size: 16px;
+    background-color: var(--sub-bg);
+    color: var(--sub-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.inSaleImg img {
+    border-radius: 8px;
+    min-height: 250px !important;
+    /* max-height: 230px !important; */
+}
+
+.rate {
+    color: var(--green-color);
+}
+
+/* --------------------------------------------------------- */
+
+.featuredBookDetails {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featuredBookImage img {
+    border-radius: 8px;
+}
+
+.featuredBooks {
+    background-color: var(--sub-bg);
+}
+
+.featuredBookIcon {
+    position: relative;
+}
+
+.bookmarkIcon {
+    color: var(--sub-color);
+}
+
+.starIcon {
+    position: absolute;
+    right: 10px;
+    top: -8px;
+    font-size: var(--text-small);
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.featuredBookName p {
+    font-size: var(--text-small);
+    color: var(--sub-color);
+}
+
+.featuredBookDesc p {
+    font-size: var(--text-small);
+}
 
 /* ----------------------------------responsive------------------------ */
 
@@ -392,10 +463,60 @@ input::placeholder {
         width: 50% !important;
         margin: 0 auto;
     }
+
+    .inSaleImg {
+        width: 50% !important;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width:450px) {
     .sectionTitle {
         width: 90% !important;
     }
+
+    .inSaleImg {
+        width: 70% !important;
+        margin: 0 auto;
+    }
+
+    .text-cente {
+        text-align: center;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .inSaleImg img {
+        min-height: 180px !important;
+    }
+}
+
+
+
+.mySwiper3 {
+    width: 350px;
+    height: 350px;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* margin-left: -150px; */
+    /* margin-top: -150px; */
+}
+
+.mySwiper3 img {
+    border-radius: 8px;
+}
+
+.swiperSide {
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.swiperSide img {
+    display: block;
+    width: 100% !important;
+    max-height: 350px;
 }
