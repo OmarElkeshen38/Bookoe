@@ -133,3 +133,32 @@ var swiper = new Swiper(".mySwiper3", {
 // const emblaNode = document.querySelector(".embla");
 // const options = { loop: true };
 // const emblaApi = EmblaCarousel(emblaNode, options);
+
+
+var swiper = new Swiper(".testimonialSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: true,
+  autoplay: true,
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  on: {
+    init: function () {
+      var activeSlide = this.slides[this.activeIndex];
+      activeSlide.classList.add('testimonialSwiperSlideActive');
+    },
+    slideChange: function () {
+      var allSlides = this.slides;
+      for (var i = 0; i < allSlides.length; i++) {
+        allSlides[i].classList.remove('testimonialSwiperSlideActive');
+        allSlides[i].style.opacity = 0.4;
+      }
+      var activeSlide = this.slides[this.activeIndex];
+      activeSlide.classList.add('testimonialSwiperSlideActive');
+      activeSlide.style.opacity = 1;
+    },
+  },
+});
