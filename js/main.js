@@ -75,6 +75,48 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".flashSaleSwiper", {
+    slidesPerView: 6,
+    spaceBetween: 10,
+    direction: "horizontal",
+    loop: true,
+
+    breakpoints: {
+      988: {
+        slidesPerView: 6,
+        spaceBetween: 20,
+      },
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      200: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
+
+    autoplay: true,
+
+    pagination: {
+      el: ".flashSaleSwiperPaginatiion",
+    },
+
+    // navigation: {
+    //   nextEl: ".nextBtn",
+    //   prevEl: ".prevBtn",
+    // },
+
+    scrollbar: {
+      el: ".flashSaleSwiperScrollbar",
+    },
+  });
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".mySwiper2", {
     slidesPerView: 6,
@@ -97,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
 
-    autoplay: true,
+    // autoplay: true,
 
     pagination: {
       el: ".swiper2Paginatiion",

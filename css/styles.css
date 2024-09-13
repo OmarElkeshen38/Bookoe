@@ -457,6 +457,146 @@ input::placeholder {
     border-radius: 50%;
 }
 
+/* ----------------------------------newsDetail------------------------ */
+
+.newsImg img {
+    border-radius: 8px;
+}
+
+.newsDetail p {
+    font-size: var(--text-small);
+}
+
+/* ------------------------------------numRateBox-------------------------- */
+
+.numRateBox i {
+    color: var(--sub-color);
+}
+
+.numRateBox h2 {
+    color: var(--main-color);
+}
+
+/* ----------------------------subscribe------------------------------ */
+
+.subscribeInput {
+    border-radius: 8px !important;
+    background-color: #7969e6;
+}
+
+.subscribeInput input {
+    background-color: #7969e6;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+.subscribeInput input:focus {
+    background-color: #7969e6;
+    border: none;
+    outline: none;
+}
+
+.subscribeInput input::placeholder {
+    color: #F1EEFF !important;
+}
+
+.subscribeInput button {
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    padding: 10px 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subscribe {
+    background-color: var(--sub-color);
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+/* ----------------------------------responsive------------------------ */
+
+
+.footer {
+    position: absolute;
+}
+
+.footerlogo .websiteDesc {
+    font-size: var(--text-small);
+    color: #12142D;
+}
+
+.logo h1 {
+    color: #12142D !important;
+}
+
+.logo p {
+    font-size: var(--text-small);
+}
+
+.socialIcon i {
+    color: var(--main-color);
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.socialIcon i:hover {
+    background-color: #eaf5f8;
+    color: var(--sub-color);
+}
+
+.booksCategories h2 {
+    color: var(--main-color);
+}
+
+.booksCategories a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.quickLinks h2 {
+    color: var(--main-color);
+}
+
+.quickLinks a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.locationLink {
+    height: 120px;
+    min-height: 120px;
+    border-radius: 8px;
+}
+
+.contactInfo i {
+    color: var(--sub-color);
+    font-size: 18px;
+}
+
+.contactInfo p {
+    color: var(--main-color);
+}
+
+.rightReserved {
+    color: var(--main-color);
+}
+
+.rightReserved p {
+    font-size: 16px;
+}
+
+.rightReserved span {
+    color: var(--sub-color);
+}
+
 /* ----------------------------------responsive------------------------ */
 
 
@@ -550,4 +690,13 @@ input::placeholder {
     display: block;
     width: 100% !important;
     max-height: 350px;
+}
+
+
+
+
+
+
+.servicesPayment {
+    background-color: var(--sub-bg);
 }
