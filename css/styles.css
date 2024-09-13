@@ -601,6 +601,19 @@ input::placeholder {
 
 
 @media (max-width:995px) {
+    .navbar form {
+        width: 100%;
+    }
+
+    .navbar form input {
+        padding: 0px 8px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .backToSchoolContainer {
         width: 100% !important;
     }
@@ -611,6 +624,14 @@ input::placeholder {
 }
 
 @media (max-width:768px) {
+    .navbar .logoText {
+        display: none;
+    }
+
+    .navbar form {
+        width: 100%;
+    }
+
     .backToSchool {
         padding: 22px 20px !important;
         display: flex;
@@ -630,6 +651,27 @@ input::placeholder {
 }
 
 @media (max-width:577px) {
+    .navbar form {
+        display: block;
+        width: 100%;
+    }
+
+    /* Reduce padding for mobile view */
+    .imgLogo {
+        padding: 2px 4px;
+    }
+
+    .navbar form input {
+        padding: 0 5px;
+        width: calc(100% - 40px);
+        /* Adjust width for search icon */
+    }
+
+    .navbar-nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+
     .saleImg {
         width: 50% !important;
         margin: 0 auto;
