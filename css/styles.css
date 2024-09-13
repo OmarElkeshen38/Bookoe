@@ -325,28 +325,34 @@ input::placeholder {
 
 .saleImg img {
     border-radius: 8px;
-    min-height: 250px !important;
-    /* max-height: 230px !important; */
+    width: 100%;
+    height: auto;
+    min-height: 220px;
+    object-fit: cover;
 }
 
 .saleData h3 {
     color: var(--main-color);
     font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .saleData .category {
     color: var(--sub-color);
-    font-size: var(--text-small);
+    font-size: 0.9rem;
 }
 
 .saleData .newSalary {
     color: var(--sub-color);
     font-weight: 800;
+    font-size: 1.1rem;
 }
 
 .oldSalary {
     text-decoration: line-through;
+    font-size: 1rem;
 }
+
 
 /* --------------------------------------------------------------- */
 
@@ -599,6 +605,20 @@ input::placeholder {
 
 /* ----------------------------------responsive------------------------ */
 
+@media (max-width: 1200px) {
+    .saleData h3 {
+        font-size: 1.1rem;
+    }
+
+    .saleData .newSalary {
+        font-size: 1rem;
+    }
+
+    .saleData .category,
+    .oldSalary {
+        font-size: 0.85rem;
+    }
+}
 
 @media (max-width:995px) {
     .navbar form {
@@ -620,6 +640,18 @@ input::placeholder {
 
     .bestSellerContainer {
         display: none;
+    }
+
+    .saleData {
+        padding: 1rem;
+    }
+
+    .saleImg img {
+        height: 180px;
+    }
+
+    .swiper-slide {
+        max-width: 90%;
     }
 }
 
@@ -648,6 +680,28 @@ input::placeholder {
     .sectionTitle {
         width: 75% !important;
     }
+
+    .saleImg img {
+        height: 150px;
+    }
+
+    .swiper-slide {
+        max-width: 85%;
+    }
+
+    /* Reduce text size */
+    .saleData h3 {
+        font-size: 1rem;
+    }
+
+    .saleData .newSalary {
+        font-size: 0.9rem;
+    }
+
+    .saleData .category,
+    .oldSalary {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width:577px) {
@@ -656,7 +710,6 @@ input::placeholder {
         width: 100%;
     }
 
-    /* Reduce padding for mobile view */
     .imgLogo {
         padding: 2px 4px;
     }
@@ -664,12 +717,37 @@ input::placeholder {
     .navbar form input {
         padding: 0 5px;
         width: calc(100% - 40px);
-        /* Adjust width for search icon */
     }
 
     .navbar-nav {
         width: 100%;
         justify-content: space-around;
+    }
+
+    .saleImg img {
+        height: 130px;
+        min-height: 150px;
+    }
+
+    .swiper-slide {
+        max-width: 100%;
+    }
+
+    .saleData {
+        padding: 0.8rem;
+    }
+
+    .saleData h3 {
+        font-size: 0.9rem;
+    }
+
+    .saleData .newSalary {
+        font-size: 0.8rem;
+    }
+
+    .saleData .category,
+    .oldSalary {
+        font-size: 0.75rem;
     }
 
     .saleImg {
