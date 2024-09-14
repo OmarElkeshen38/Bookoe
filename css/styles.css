@@ -125,6 +125,7 @@ input::placeholder {
 
 .navbar form input {
     border: none !important;
+    background-color: transparent !important;
     width: 100%;
     padding: 0px 10px;
 }
