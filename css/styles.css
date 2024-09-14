@@ -673,6 +673,10 @@ input::placeholder {
         width: 100%;
     }
 
+    .navbar form {
+        margin: 15px 0px;
+    }
+
     .backToSchool {
         padding: 22px 20px !important;
         display: flex;
