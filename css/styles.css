@@ -607,6 +607,11 @@ input::placeholder {
     color: var(--sub-color);
 }
 
+.rightReserved {
+    padding-top: 10px;
+    border-top: 1px solid #00000025;
+}
+
 /* ----------------------------------responsive------------------------ */
 
 @media (max-width: 1200px) {
@@ -693,7 +698,6 @@ input::placeholder {
         max-width: 85%;
     }
 
-    /* Reduce text size */
     .saleData h3 {
         font-size: 1rem;
     }
@@ -713,6 +717,9 @@ input::placeholder {
 
     .featuresOtherBooks {
         display: none;
+    }
+    .subscribeBox {
+        width: 70% !important;
     }
 }
 
@@ -798,6 +805,32 @@ input::placeholder {
     .inSaleImg img {
         min-height: 180px !important;
     }
+
+    .numRateBox {
+        margin: 15px 0px;
+    }
+    .subscribeBox {
+        width: 80% !important;
+    }
+    .footerlogo {
+        align-items: center;
+        text-align: center;
+    }
+    .booksCategories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .quickLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .ourStore {
+        align-items: center;
+    }
 }
 
 @media (max-width:450px) {
@@ -833,6 +866,14 @@ input::placeholder {
 
     .featuredBooksTitle {
         width: 95% !important;
+    }
+
+    .subscribeBox {
+        width: 90% !important;
+    }
+    .rightReserved {
+        flex-direction: column;
+        align-items: center;
     }
 }
 

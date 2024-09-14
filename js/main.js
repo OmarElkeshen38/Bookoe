@@ -1,4 +1,5 @@
 function startCountdown(durationInDays) {
+  
 }
 
 window.onload = () => {
@@ -126,8 +127,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 var swiper = new Swiper(".testimonialSwiper", {
-  slidesPerView: 3,
-  spaceBetween: 25,
+  // slidesPerView: 3,
+  // spaceBetween: 25,
+  breakpoints: {
+    988: {
+      slidesPerView: 3,
+      spaceBetween: 25,
+    },
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+  },
   loop: true,
   autoplay: true,
   centeredSlides: true,
