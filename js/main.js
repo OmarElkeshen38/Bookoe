@@ -1,36 +1,4 @@
 function startCountdown(durationInDays) {
-  const now = new Date();
-  const targetDate = new Date(
-    now.getTime() + durationInDays * 24 * 60 * 60 * 1000
-  );
-
-  const countdownInterval = setInterval(() => {
-    const currentTime = new Date().getTime();
-    const distance = targetDate - currentTime;
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("days").innerText = days;
-    document.getElementById("hours").innerText = String(hours).padStart(2, "0");
-    document.getElementById("minutes").innerText = String(minutes).padStart(
-      2,
-      "0"
-    );  
-    document.getElementById("seconds").innerText = String(seconds).padStart(
-      2,
-      "0"
-    );
-
-    if (distance < 0) {
-      clearInterval(countdownInterval);
-      document.querySelector(".countdown").innerHTML = "Countdown Finished!";
-    }
-  }, 1000);
 }
 
 window.onload = () => {
@@ -155,26 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
-
-var swiper = new Swiper(".mySwiper3", {
-  effect: "cube",
-  grabCursor: true,
-  cubeEffect: {
-    shadow: true,
-    slideShadows: true,
-    shadowOffset: 20,
-    shadowScale: 0.94,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  loop: true,
-  // autoplay: true,
-});
-
-// const emblaNode = document.querySelector(".embla");
-// const options = { loop: true };
-// const emblaApi = EmblaCarousel(emblaNode, options);
 
 
 var swiper = new Swiper(".testimonialSwiper", {

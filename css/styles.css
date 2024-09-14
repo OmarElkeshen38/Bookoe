@@ -389,15 +389,19 @@ input::placeholder {
     color: var(--green-color);
 }
 
-/* --------------------------------------------------------- */
+/* ------------------------------featuredBook--------------------------- */
 
 .featuredBookDetails {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.featuredBookImage img {
+.featuredBooks img {
     border-radius: 8px;
+}
+
+.featuresOtherBooks img {
+    max-height: 300px;
 }
 
 .featuredBooks {
@@ -522,7 +526,7 @@ input::placeholder {
     border-radius: 8px;
 }
 
-/* ----------------------------------responsive------------------------ */
+/* ----------------------------------footer------------------------ */
 
 
 .footer {
@@ -702,6 +706,14 @@ input::placeholder {
     .oldSalary {
         font-size: 0.8rem;
     }
+
+    .featuredBooksTitle {
+        width: 80% !important;
+    }
+
+    .featuresOtherBooks {
+        display: none;
+    }
 }
 
 @media (max-width:577px) {
@@ -751,13 +763,40 @@ input::placeholder {
     }
 
     .saleImg {
-        width: 50% !important;
+        width: 60% !important;
         margin: 0 auto;
     }
 
     .inSaleImg {
-        width: 50% !important;
+        width: 60% !important;
         margin: 0 auto;
+    }
+    .countdown {
+        gap: 23px !important;
+    }
+
+    .featuredBooksTitle {
+        width: 90% !important;
+    }
+
+    .featuredBookImage {
+        width: 60% !important;
+        margin: auto;
+    }
+    .featuredBookImage img {
+        height: 300px;
+    }
+
+    .featuredBookDetTit {
+        margin-top: 20px;
+    }
+
+    .saleImg img {
+        min-height: 180px !important;
+    }
+
+    .inSaleImg img {
+        min-height: 180px !important;
     }
 }
 
@@ -766,8 +805,13 @@ input::placeholder {
         width: 90% !important;
     }
 
+    .saleImg {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+
     .inSaleImg {
-        width: 70% !important;
+        width: 90% !important;
         margin: 0 auto;
     }
 
@@ -779,8 +823,16 @@ input::placeholder {
         flex-direction: column;
     }
 
+    .saleImg img {
+        min-height: 200px !important;
+    }
+
     .inSaleImg img {
-        min-height: 180px !important;
+        min-height: 200px !important;
+    }
+
+    .featuredBooksTitle {
+        width: 95% !important;
     }
 }
 
