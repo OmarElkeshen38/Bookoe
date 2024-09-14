@@ -149,7 +149,7 @@ input::placeholder {
     color: var(--sub-color);
 }
 
-/* ------------------------------------------------------- */
+/* ----------------------------header--------------------------- */
 
 .header {
     height: 65vh;
@@ -701,7 +701,7 @@ input::placeholder {
     }
 
     .swiper-slide {
-        max-width: 85%;
+        max-width: 90%;
     }
 
     .saleData h3 {
@@ -776,12 +776,12 @@ input::placeholder {
     }
 
     .saleImg {
-        width: 60% !important;
+        width: 90% !important;
         margin: 0 auto;
     }
 
     .inSaleImg {
-        width: 60% !important;
+        width: 90% !important;
         margin: 0 auto;
     }
     .countdown {
@@ -845,12 +845,12 @@ input::placeholder {
     }
 
     .saleImg {
-        width: 90% !important;
+        width: 100% !important;
         margin: 0 auto;
     }
 
     .inSaleImg {
-        width: 90% !important;
+        width: 100% !important;
         margin: 0 auto;
     }
 
@@ -863,11 +863,11 @@ input::placeholder {
     }
 
     .saleImg img {
-        min-height: 200px !important;
+        min-height: 255px !important;
     }
 
     .inSaleImg img {
-        min-height: 200px !important;
+        min-height: 255px !important;
     }
 
     .featuredBooksTitle {

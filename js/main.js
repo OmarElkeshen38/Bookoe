@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       767: {
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
       200: {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 10,
       },
     },
 
@@ -60,11 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       767: {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
       200: {
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 18,
       },
     },
 
