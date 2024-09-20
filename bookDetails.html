@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords"
+        content="شراء كتب أونلاين, متجر كتب, عالم الكتب, كتب مميزة, روايات عربية, أفضل الكتب, عروض الكتب, خصومات على الكتب, متجر للقراء">
+    <meta name="description"
+        content="عالم الكتب، وجهتك المثالية لاكتشاف مجموعة واسعة من الكتب المميزة في مختلف المجالات. نقدم لك تشكيلة متنوعة من الروايات، الكتب الفكرية، وتطوير الذات، وغيرها، لتلبية اهتمامات جميع القراء.">
+    <meta name="author" content="omar elkeshen">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>
+        عالم الكتب | الفيل الأزرق</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top bg-white">
+        <div class="container">
+            <a class="navbar-brand logo d-flex align-items-center gap-1" href="index.html">
+                <div class="imgLogo p-2 d-flex align-items-center justify-content-center ms-1">
+                    <i class="fa-solid fa-swatchbook"></i>
+                </div>
+                <div class="logoText">
+                    <h1 class="fs-4 fw-bold m-0 p-0">عالم الكتب</h1>
+                    <p class="m-0 p-0 text-black-50">متجر بيع جميع الكتب</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex m-auto border" role="search">
+                    <li class="nav-item dropdown rounded-0">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-layer-group ms-1"></i>
+                            <span>القائمة</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <input class="ms-1 border-start border-end" type="search" placeholder="ابحث عبر ملايين الكتب ..."
+                        aria-label="Search">
+                    <button class="btn rounded-0">
+                        <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                    </button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link likedBtn" aria-current="page" href="#">
+                            <i class="fa-regular fa-heart border likedPage"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cartBtn" aria-current="page" href="#">
+                            <i class="fa-solid fa-cart-shopping border cartPage"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cartBtn" aria-current="page" href="#">
+                            <div class="profileImage">
+                                <img src="images/client.jpg" class="w-100" alt="client image">
+                            </div>
+                        </a>
+                    </li>
+                    <div class="switchLang">
+                        <select>
+                            <option value="ar" key="AR">
+                                AR
+                            </option>
+                            <option value="en" key="EN">
+                                EN
+                            </option>
+                        </select>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ---------------------------Books---------------------------- -->
+
+    <section class="container">
+        <div class="mt-3">
+            <a class="homeLink" href="index.html">الصفحة الرئيسية </a> <a class="homeLink" href="books.html">/ الكتب
+            </a><span class="text-black-50">/ الفيل الأزرق</span>
+        </div>
+        <div class="bookRowBox row py-3 my-4">
+            <div class="col-lg-3">
+                <div class="saleImg bookDetailsImage h-100">
+                    <img src="images/book2.jpg" class="w-100 h-100" alt="book cover">
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="bookData d-flex flex-column gap-2 py-3">
+                    <h1 class="fs-3 fw-bold p-0 m-0">الفيل الأزرق</h1>
+                    <div class="d-flex justify-content-between">
+                        <div class="bookTitleData d-flex flex-wrap align-items-center gap-3">
+                            <div class="d-flex gap-2 starsRate">
+                                <i class="fa-solid fa-star fs-6"></i>
+                                <i class="fa-solid fa-star fs-6"></i>
+                                <i class="fa-solid fa-star fs-6"></i>
+                                <i class="fa-solid fa-star fs-6"></i>
+                                <i class="fa-regular fa-star fs-6"></i>
+                            </div>
+                            <h5 class="fw-bold m-0 p-0">4.0</h5>
+                            <p class="text-black-50 fs-6 m-0 p-0 d-flex align-items-center gap-1">
+                                <i class="fa-solid fa-comment-dots text-primary"></i>
+                                <span>235 مراجعة</span>
+                            </p>
+                            <p class="text-black-50 fs-6 m-0 p-0 d-flex align-items-center gap-1">
+                                <i class="fa-solid fa-thumbs-up text-primary"></i>
+                                <span>235 اعجاب</span>
+                            </p>
+                        </div>
+                        <div class="socialLinks d-flex flex-wrap align-items-center gap-2">
+                            <a href="#" class="d-flex gap-2 align-items-center faceLink">
+                                <p class="m-0 p-0">Facebook</p>
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="d-flex gap-2 align-items-center twitterLink">
+                                <p class="m-0 p-0">twitter</p>
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="d-flex gap-2 align-items-center whastsLink">
+                                <p class="m-0 p-0">Whatsapp</p>
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#" class="d-flex gap-2 align-items-center gmailLink">
+                                <p class="m-0 p-0">Email</p>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-black-50 mt-2">"الفيل الأزرق" هي رواية مشوقة تجمع بين الغموض والتشويق النفسي، حيث
+                        تدور
+                        أحداثها حول الطبيب النفسي يحيى، الذي يعود للعمل بعد انقطاع طويل في مستشفى العباسية للأمراض
+                        النفسية. يجد نفسه مكلفًا بتقييم حالة أحد أصدقائه القدامى المتهم بجريمة غامضة</p>
+                    <p class="text-black-50">"يدخل في عالم من الألغاز والأحداث الغريبة. الرواية تمزج بين الحقائق العلمية
+                        والخيال، وتأخذ القارئ في رحلة نفسية عميقة مليئة بالمفاجآت والتساؤلات. يجد نفسه مكلفًا بتقييم
+                        حالة أحد أصدقائه القدامى المتهم بجريمة</p>
+                    <div class="d-flex justify-content-between flex-wrap align-items-center">
+                        <div class="d-flex align-items-center mt-2 gap-4">
+                            <div class="writerImage">
+                                <img src="images/client.jpg" class="w-100" alt="client image">
+                            </div>
+                            <div class="featuredBookWriter">
+                                <p class="text-black-50 m-0">الكاتب</p>
+                                <h3 class="fs-6 fw-bolder m-0 mt-2">أحمد مراد</h3>
+                            </div>
+                            <div class="featuredBookPublisher">
+                                <p class="text-black-50 m-0">الناشر</p>
+                                <h3 class="fs-6 fw-bolder m-0 mt-2">عصير الكتب</h3>
+                            </div>
+                            <div class="featuredBookDate">
+                                <p class="text-black-50 m-0">التاريخ</p>
+                                <h3 class="fs-6 fw-bolder m-0 mt-2">2019</h3>
+                            </div>
+                        </div>
+                        <div class="btnsAdds d-flex mt-3 gap-2">
+                            <button class="freeSh">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>شحن مجاني</span>
+                            </button>
+                            <button class="inStock">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>في المخزن</span>
+                            </button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-between flex-wrap align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <h2 class="m-0 p-0 fw-bold newSalary">76.12 $</h2>
+                            <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                            <p class="m-0 p-0 disSalary">15%</p>
+                        </div>
+                        <div class="d-flex mt-2 align-items-center gap-2">
+                            <div class="incleaseBtn border d-flex gap-4 px-3 py-2 align-items-center">
+                                <i class="fa-solid fa-plus"></i>
+                                <p id="counter" class="p-0 m-0 fs-bold">1</p>
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <button class="mainBtn d-flex align-items-center gap-2">
+                                <span>اضف الى العربة</span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <div class="border heartIcon p-2 d-flex justify-content-center align-items-center">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row py-5">
+            <div class="col-md-3">
+                <div class="p-1 relaitedBooks">
+                    <h2 class="m-0 p-0 fw-bold fs-3">كتب ذات صلة</h2>
+                    <div class="bg-white mt-4 row">
+                        <div class="col-md-5 col-sm-4">
+                            <div class="relatedBookImage h-100">
+                                <img src="images/book9.jpg" alt="related Book Cover" class="w-100 h-100">
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-8">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="featuredBookDetTit">
+                                    <div class="featuredBookName">
+                                        <h3 class="m-0 fs-4 fw-bold">رحلتي من الشك</h3>
+                                        <p class="featuredBookCategory m-0"> دراما رعب تشويق</p>
+                                    </div>
+                                </div>
+                                <div class="bookTitleData d-flex align-items-center gap-2">
+                                    <div class="d-flex gap-2 starsRate">
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                    </div>
+                                    <h5 class="fw-bold m-0 p-0">4.0</h5>
+                                    <p class="text-black-50 fs-6 m-0 p-0">235 مراجعة
+                                    </p>
+                                </div>
+                                <div class="d-flex align-items-center flex-wrap gap-2">
+                                    <h4 class="m-0 p-0 fs-5 fw-bold newSalary">72.69 $</h4>
+                                    <p class="m-0 p-0 text-black-50 oldSalary">88.00 $</p>
+                                </div>
+
+                                <button class="relAddBtn d-flex justify-content-start gap-2 align-items-center p-0">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>أضافة الى العربة</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white mt-4 row">
+                        <div class="col-md-5 col-sm-4">
+                            <div class="relatedBookImage h-100">
+                                <img src="images/book8.jpg" alt="related Book Cover" class="w-100 h-100">
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-8">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="featuredBookDetTit">
+                                    <div class="featuredBookName">
+                                        <h3 class="m-0 fs-4 fw-bold">رحلتي من الشك</h3>
+                                        <p class="featuredBookCategory m-0"> دراما رعب تشويق</p>
+                                    </div>
+                                </div>
+                                <div class="bookTitleData d-flex align-items-center gap-2">
+                                    <div class="d-flex gap-2 starsRate">
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                    </div>
+                                    <h5 class="fw-bold m-0 p-0">4.0</h5>
+                                    <p class="text-black-50 fs-6 m-0 p-0">235 مراجعة
+                                    </p>
+                                </div>
+                                <div class="d-flex align-items-center flex-wrap gap-2">
+                                    <h4 class="m-0 p-0 fs-5 fw-bold newSalary">72.69 $</h4>
+                                    <p class="m-0 p-0 text-black-50 oldSalary">88.00 $</p>
+                                </div>
+
+                                <button class="relAddBtn d-flex justify-content-start gap-2 align-items-center p-0">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>أضافة الى العربة</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white mt-4 row">
+                        <div class="col-md-5 col-sm-4">
+                            <div class="relatedBookImage h-100">
+                                <img src="images/book5.jpg" alt="related Book Cover" class="w-100 h-100">
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-8">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="featuredBookDetTit">
+                                    <div class="featuredBookName">
+                                        <h3 class="m-0 fs-4 fw-bold">رحلتي من الشك</h3>
+                                        <p class="featuredBookCategory m-0"> دراما رعب تشويق</p>
+                                    </div>
+                                </div>
+                                <div class="bookTitleData d-flex align-items-center gap-2">
+                                    <div class="d-flex gap-2 starsRate">
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                    </div>
+                                    <h5 class="fw-bold m-0 p-0">4.0</h5>
+                                    <p class="text-black-50 fs-6 m-0 p-0">235 مراجعة
+                                    </p>
+                                </div>
+                                <div class="d-flex align-items-center flex-wrap gap-2">
+                                    <h4 class="m-0 p-0 fs-5 fw-bold newSalary">72.69 $</h4>
+                                    <p class="m-0 p-0 text-black-50 oldSalary">88.00 $</p>
+                                </div>
+
+                                <button class="relAddBtn d-flex justify-content-start gap-2 align-items-center p-0">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>أضافة الى العربة</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="books.html">
+                        <button class="subBtn w-100 mt-3">مشاهدة المزيد</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="p-1 mt-3">
+                    <div class="d-flex align-items-center gap-4 detailsTitle">
+                        <h2 class="m-0 p-0 fw-bold fs-3 detProductBtn btnSelected notSelected"
+                            onclick="detailsDisplay('details')">تفاصيل المنتج</h2>
+                        <h2 class="m-0 p-0 fw-bold fs-3 revProductBtn notSelected" onclick="detailsDisplay('reviews')">
+                            مراجعة العملاء</h2>
+                    </div>
+                    <div class="dtailsProduct visible mt-4">
+                        <table class="table border">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">عنوان الكتاب</th>
+                                    <td>الفيل الأزرق</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">المؤلف</th>
+                                    <td>أحمد مراد</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">كود الكتاب</th>
+                                    <td>33214521</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">لغات اضافية</th>
+                                    <td>En</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">تاريخ النشر</th>
+                                    <td>1/1/2007</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">الناشر</th>
+                                    <td>عصير الكتب</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="custReview mt-4">
+                        <div class="border custReviewBox">
+                            <div class="row p-3 d-flex align-items-center">
+                                <div class="col-md-4">
+                                    <div class="py-3">
+                                        <h3 class="fs-4">معلومات التقييم</h3>
+                                        <p class="m-0 p-0">"اطلع على تقييمات حول الكتب التي نقدمها. نهدف إلى تقديم أفضل
+                                            لتساعدك في اختيار الكتب"</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="rate py-3">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="starsRate">
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                            </div>
+                                            <h4 class="fw-bold m-0 p-0">5</h4>
+                                            <div class="progress" style="width: 90%" role="progressbar"
+                                                aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 75%"></div>
+                                            </div>
+                                            <h4 class="fw-bold fs-5 m-0 p-0">86%</h4>
+                                        </div>
+                                        <div class="d-flex mt-1 align-items-center gap-2">
+                                            <div class="starsRate">
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                            </div>
+                                            <h4 class="fw-bold m-0 p-0">4</h4>
+                                            <div class="progress" style="width: 90%" role="progressbar"
+                                                aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 61%"></div>
+                                            </div>
+                                            <h4 class="fw-bold fs-5 m-0 p-0">61%</h4>
+                                        </div>
+                                        <div class="d-flex mt-1 align-items-center gap-2">
+                                            <div class="starsRate">
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                            </div>
+                                            <h4 class="fw-bold m-0 p-0">3</h4>
+                                            <div class="progress" style="width: 90%" role="progressbar"
+                                                aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 55%"></div>
+                                            </div>
+                                            <h4 class="fw-bold fs-5 m-0 p-0">55%</h4>
+                                        </div>
+                                        <div class="d-flex mt-1 align-items-center gap-2">
+                                            <div class="starsRate">
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                            </div>
+                                            <h4 class="fw-bold m-0 p-0">2</h4>
+                                            <div class="progress" style="width: 90%" role="progressbar"
+                                                aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 14%"></div>
+                                            </div>
+                                            <h4 class="fw-bold fs-5 m-0 p-0">14%</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <h3 class="m-0 p-0 fw-bold fs-1">4.7</h3>
+                                        <div class="d-flex gap-2 starsRate">
+                                            <i class="fa-solid fa-star fs-6"></i>
+                                            <i class="fa-solid fa-star fs-6"></i>
+                                            <i class="fa-solid fa-star fs-6"></i>
+                                            <i class="fa-solid fa-star fs-6"></i>
+                                            <i class="fa-regular fa-star fs-6"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="fs-5 fw-bold m-0 p-0 my-4">عرض 4 من 20 مراجعة</h4>
+                        <div class="border custComments mt-4 p-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="writerImage">
+                                    <img src="images/client.jpg" class="w-100" alt="client image">
+                                </div>
+                                <div class="featuredBookWriter">
+                                    <h3 class="fs-6 fw-bolder m-0 mt-2">عمر الخشن</h3>
+                                    <p class="text-black-50 m-0">jan 4th, 2020</p>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-9">
+                                    <div class="mt-3">
+                                        <p class="p-0 m-0">الأسلوب الكتابي ممتاز، والشخصيات تم تطويرها بشكل جيد. من أفضل
+                                            الكتب التي قرأتها هذا العام والكتاب مليء بالأفكار العميقة والمفيدة. جعلني
+                                            أعيد التفكير في العديد من جوانب حياتي</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mt-3">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <h3 class="m-0 p-0 fw-bold fs-1">4.0</h3>
+                                            <div class="d-flex gap-2 starsRate">
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-regular fa-star fs-6"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border custComments mt-4 p-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="writerImage">
+                                    <img src="images/client.jpg" class="w-100" alt="client image">
+                                </div>
+                                <div class="featuredBookWriter">
+                                    <h3 class="fs-6 fw-bolder m-0 mt-2">عمر الخشن</h3>
+                                    <p class="text-black-50 m-0">jan 4th, 2020</p>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-9">
+                                    <div class="mt-3">
+                                        <p class="p-0 m-0">الأسلوب الكتابي ممتاز، والشخصيات تم تطويرها بشكل جيد. من أفضل
+                                            الكتب التي قرأتها هذا العام والكتاب مليء بالأفكار العميقة والمفيدة. جعلني
+                                            أعيد التفكير في العديد من جوانب حياتي</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mt-3">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <h3 class="m-0 p-0 fw-bold fs-1">4.0</h3>
+                                            <div class="d-flex gap-2 starsRate">
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-regular fa-star fs-6"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border custComments mt-4 p-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="writerImage">
+                                    <img src="images/client.jpg" class="w-100" alt="client image">
+                                </div>
+                                <div class="featuredBookWriter">
+                                    <h3 class="fs-6 fw-bolder m-0 mt-2">عمر الخشن</h3>
+                                    <p class="text-black-50 m-0">jan 4th, 2020</p>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-9">
+                                    <div class="mt-3">
+                                        <p class="p-0 m-0">الأسلوب الكتابي ممتاز، والشخصيات تم تطويرها بشكل جيد. من أفضل
+                                            الكتب التي قرأتها هذا العام والكتاب مليء بالأفكار العميقة والمفيدة. جعلني
+                                            أعيد التفكير في العديد من جوانب حياتي</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mt-3">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <h3 class="m-0 p-0 fw-bold fs-1">4.0</h3>
+                                            <div class="d-flex gap-2 starsRate">
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-regular fa-star fs-6"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border custComments mt-4 p-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="writerImage">
+                                    <img src="images/client.jpg" class="w-100" alt="client image">
+                                </div>
+                                <div class="featuredBookWriter">
+                                    <h3 class="fs-6 fw-bolder m-0 mt-2">عمر الخشن</h3>
+                                    <p class="text-black-50 m-0">jan 4th, 2020</p>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-9">
+                                    <div class="mt-3">
+                                        <p class="p-0 m-0">الأسلوب الكتابي ممتاز، والشخصيات تم تطويرها بشكل جيد. من أفضل
+                                            الكتب التي قرأتها هذا العام والكتاب مليء بالأفكار العميقة والمفيدة. جعلني
+                                            أعيد التفكير في العديد من جوانب حياتي</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mt-3">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <h3 class="m-0 p-0 fw-bold fs-1">4.0</h3>
+                                            <div class="d-flex gap-2 starsRate">
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-solid fa-star fs-6"></i>
+                                                <i class="fa-regular fa-star fs-6"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="books.html">
+                            <button class="mainBtn w-100 mt-3">مشاهدة المزيد</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bookDetailsServ my-5">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-3 col-md-6 mt-2">
+                    <div class="services d-flex align-items-center gap-3">
+                        <div class="icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div class="servText">
+                            <h3 class="fs-5 p-0 mb-1 fw-bold">تسليم سريع</h3>
+                            <p class="text-black-50 m-0 p-0">استمتع بخدمة التسليم السريع مع وصول طلباتك إلى باب منزلك في
+                                وقت قياسي.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-2">
+                    <div class="services d-flex align-items-center gap-3">
+                        <div class="icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="servText">
+                            <h3 class="fs-5 p-0 mb-1 fw-bold">الدفع الآمن</h3>
+                            <p class="text-black-50 m-0 p-0">نحن نلتزم بأعلى معايير الحماية لضمان أمان معلوماتك الشخصية
+                                والمالية
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-2">
+                    <div class="services d-flex align-items-center gap-3">
+                        <div class="icon">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+                        <div class="servText">
+                            <h3 class="fs-5 p-0 mb-1 fw-bold">أفضل جودة</h3>
+                            <p class="text-black-50 m-0 p-0">نحرص على تقديم منتجات مختارة بعناية لضمان حصولك على الأفضل.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-2">
+                    <div class="services d-flex align-items-center gap-3">
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="servText">
+                            <h3 class="fs-5 p-0 mb-1 fw-bold">ضمان الإرجاع</h3>
+                            <p class="text-black-50 m-0 p-0">إذا لم تكن راضيًا عن مشترياتك لأي سبب، يمكنك إرجاعها بكل
+                                سهولة وراحة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------booksOnSale---------------------------- -->
+
+    <section class="container py-5">
+        <div class="onSaleTitle d-flex justify-content-between align-items-center">
+            <h2 class="fs-3">كتب في الخصومات</h2>
+            <div class="swiperControl px-4 d-flex align-items-center gap-3">
+
+                <i class="fa-solid fa-arrow-right nextBtn"></i>
+                <div class="swiper-pagination swiper2Paginatiion pt-4"></div>
+                <i class="fa-solid fa-arrow-left prevBtn"></i>
+
+            </div>
+        </div>
+
+        <div class="swiper mySwiper2 px-2 mt-4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="inSaleImg">
+                            <img src="images/book9.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-centerr gap-2 p-2">
+                            <div class="text-cente">
+                                <h3 class="m-0 p-0 fs-5 fw-bold">رحلتي من الشك</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="details d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-wrap gap-1">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">99.00 $</p>
+                                    <h4 class="m-0 p-0 fs-6 newSalary">76.12 $</>
+                                </div>
+                                <div class="rate d-flex justify-content-between align-items-center w-10">
+                                    <h4 class="m-0 p-0 mx-2 fs-5 fw-bold">7.6
+                                        <h4 />
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="inSaleImg">
+                            <img src="images/book2.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-centerr gap-2 p-2">
+                            <div class="text-cente">
+                                <h3 class="m-0 p-0 fs-5 fw-bold">الفيل الأزرق</h3>
+                                <p class="m-0 p-0 category">دراما رعب</p>
+                            </div>
+                            <div class="details d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-wrap gap-1">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">39.00 $</p>
+                                    <h4 class="m-0 p-0 fs-6 newSalary">29.72 $</>
+                                </div>
+                                <div class="rate d-flex justify-content-between align-items-center w-10">
+                                    <h4 class="m-0 p-0 mx-2 fs-5 fw-bold">7.6
+                                        <h4 />
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="inSaleImg">
+                            <img src="images/book3.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-centerr gap-2 p-2">
+                            <div class="text-cente">
+                                <h3 class="m-0 p-0 fs-5 fw-bold">سندريلا سيكريت</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="details d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-wrap gap-1">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">41.00 $</p>
+                                    <h4 class="m-0 p-0 fs-6 newSalary">24.95 $</>
+                                </div>
+                                <div class="rate d-flex justify-content-between align-items-center w-10">
+                                    <h4 class="m-0 p-0 mx-2 fs-5 fw-bold">6.7
+                                        <h4 />
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="inSaleImg">
+                            <img src="images/book4.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-centerr gap-2 p-2">
+                            <div class="text-cente">
+                                <h3 class="m-0 p-0 fs-5 fw-bold">الكتاب الثاني</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="details d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-wrap gap-1">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">60.00 $</p>
+                                    <h4 class="m-0 p-0 fs-6 newSalary">56.54 $</>
+                                </div>
+                                <div class="rate d-flex justify-content-between align-items-center w-10">
+                                    <h4 class="m-0 p-0 mx-2 fs-5 fw-bold">8.1
+                                        <h4 />
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="inSaleImg">
+                            <img src="images/book5.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-centerr gap-2 p-2">
+                            <div class="text-cente">
+                                <h3 class="m-0 p-0 fs-5 fw-bold">شكلها سافرت</h3>
+                                <p class="m-0 p-0 category">دراما كوميدي</p>
+                            </div>
+                            <div class="details d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-wrap gap-1">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">88.00 $</p>
+                                    <h4 class="m-0 p-0 fs-6 newSalary">72.69 $</>
+                                </div>
+                                <div class="rate d-flex justify-content-between align-items-center w-10">
+                                    <h4 class="m-0 p-0 mx-2 fs-5 fw-bold">5.6
+                                        <h4 />
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="inSaleImg">
+                            <img src="images/book6.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-centerr gap-2 p-2">
+                            <div class="text-cente">
+                                <h3 class="m-0 p-0 fs-5 fw-bold">حكايات فرغلي</h3>
+                                <p class="m-0 p-0 category">عائلي كوميدي</p>
+                            </div>
+                            <div class="details d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-wrap gap-1">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">33.00 $</p>
+                                    <h4 class="m-0 p-0 fs-6 newSalary">20.47 $</>
+                                </div>
+                                <div class="rate d-flex justify-content-between align-items-center w-10">
+                                    <h4 class="m-0 p-0 mx-2 fs-5 fw-bold">9.1
+                                        <h4 />
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saleBox">
+                        <div class="inSaleImg">
+                            <img src="images/book7.jpg" class="w-100" alt="book cover">
+                        </div>
+                        <div class="saleData d-flex flex-column align-items-centerr gap-2 p-2">
+                            <div class="text-cente">
+                                <h3 class="m-0 p-0 fs-5 fw-bold">نادر فودة</h3>
+                                <p class="m-0 p-0 category">دراما رعب</p>
+                            </div>
+                            <div class="details d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-wrap gap-1">
+                                    <p class="m-0 p-0 text-black-50 oldSalary">60.00 $</p>
+                                    <h4 class="m-0 p-0 fs-6 newSalary">58.27 $</>
+                                </div>
+                                <div class="rate d-flex justify-content-between align-items-center w-10">
+                                    <h4 class="m-0 p-0 mx-2 fs-5 fw-bold">4.2
+                                        <h4 />
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- -----------------------------------subscribe------------------------------ -->
+
+    <section class="container py-5">
+        <div class="subscribe py-5">
+            <div class="w-50 subscribeBox text-center text-white">
+                <h3 class="fw-bold">اشترك في النشرة الإخبارية لدينا للحصول على أحدث تحديثات الكتب</h3>
+                <div class="subscribeInput w-75 m-auto mt-4 mb-0 d-flex">
+                    <input type="email" class="form-control py-2" placeholder="قم بكتابه حسابك هنا">
+                    <button class="subscribeBtn">اشتراك</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------footer---------------------------- -->
+
+    <footer class="footer container position-relative w-100">
+        <div class="row py-5">
+            <div class="col-lg-3 col-md-6 my-3">
+                <div class="footerlogo d-flex flex-column gap-2">
+                    <a class="navbar-brand logo d-flex align-items-center gap-1" href="index.html">
+                        <div class="imgLogo p-2 d-flex align-items-center justify-content-center ms-1">
+                            <i class="fa-solid fa-swatchbook"></i>
+                        </div>
+                        <div class="logoText">
+                            <h1 class="fs-4 fw-bold m-0 p-0">عالم الكتب</h1>
+                            <p class="m-0 p-0 text-black-50">متجر بيع جميع الكتب</p>
+                        </div>
+                    </a>
+                    <p class="websiteDesc">مرحبًا بك في عالم الكتب، وجهتك المثالية لاكتشاف مجموعة واسعة من الكتب
+                        المميزة. نقدم لك تشكيلة متنوعة من الروايات، الكتب الفكري،
+                        وغيرها، لتلبية اهتمامات جميع القراء.</p>
+                    <p class="fs-5 fw-bold m-0 p-0">تابعنا</p>
+                    <div class="d-flex align-items-center gap-3 socialIcon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-3">
+                <div class="booksCategories">
+                    <h2 class="fs-4 fw-bold">فئات الكتب</h2>
+                    <div class="d-flex align-items-center gap-4 py-2">
+                        <a href="#">اكشن</a>
+                        <a href="#">كوميدي</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-4 py-2">
+                        <a href="#">قانون</a>
+                        <a href="#">علمي</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-4 py-2">
+                        <a href="#">طبيعة</a>
+                        <a href="#">نفسية</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-4 py-2">
+                        <a href="#">مغامرة</a>
+                        <a href="#">جريمة</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-4 py-2">
+                        <a href="#">رومانسي</a>
+                        <a href="#">رعب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-3">
+                <div class="quickLinks">
+                    <h2 class="fs-4 fw-bold">لينكات سريعة</h2>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#">عنا</a>
+                        <a href="#">تواصل معنا</a>
+                        <a href="#">المنتجات</a>
+                        <a href="#">تسجيل</a>
+                        <a href="#">تسجيل الدخول</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-3">
+                <div class="ourStore d-flex flex-column gap-3">
+                    <iframe class="w-100 locationLink"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.7556946360055!2d31.131302715443853!3d29.979234981903413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584587ce563b25%3A0x16f42a0bb6b48471!2sPyramids%20of%20Giza!5e0!3m2!1sen!2seg!4v1694611836879!5m2!1sen!2seg">
+                    </iframe>
+                    <div class="d-flex align-items-center gap-2 contactInfo">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="m-0 p-0">832 اكتوبر , الجيزة , مصر</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 contactInfo">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="m-0 p-0">+ 154 5452 1246</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 contactInfo">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p class="m-0 p-0">support@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightReserved d-flex justify-content-between">
+            <p><span>Books World Store Website</span> - &copy; All Right Reserved</p>
+            <h2 class="fs-6">Made by Omar Elkeshen</h2>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

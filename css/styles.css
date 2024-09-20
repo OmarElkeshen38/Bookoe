@@ -24,8 +24,8 @@
 body {
     font-family: "Zain", sans-serif;
     font-weight: 400;
+    color: var(--main-color);
     scroll-behavior: smooth;
-    /* height: 3000px; */
     direction: rtl;
 }
 
@@ -124,8 +124,7 @@ input::placeholder {
 }
 
 .navbar form input {
-    border: none !important;
-    background-color: #fff !important;
+    /* border: none !important; */
     background-color: transparent !important;
     width: 100%;
     padding: 0px 10px;
@@ -147,6 +146,43 @@ input::placeholder {
 
 .searchIcon {
     color: var(--sub-color);
+}
+
+.likedPage, .cartPage {
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--main-color);
+}
+
+.likedPage:hover, .cartPage:hover {
+    color: var(--sub-color);
+}
+
+.profileImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.profileImage img {
+    height: 100%;
+    border-radius: 8px;
+}
+
+.switchLang {
+    background-color: var(--sub-bg);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.switchLang select {
+    background-color: var(--sub-bg);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.switchLang select option {
+    cursor: pointer;
 }
 
 /* ----------------------------header--------------------------- */
@@ -469,6 +505,7 @@ input::placeholder {
     border-radius: 50%;
 }
 
+
 /* ----------------------------------newsDetail------------------------ */
 
 .newsImg img {
@@ -492,15 +529,15 @@ input::placeholder {
 /* ----------------------------subscribe------------------------------ */
 
 .subscribeInput {
-    border-radius: 8px !important;
     background-color: #7969e6;
+    border-radius: 8px;
+    padding: 3px;
 }
 
 .subscribeInput input {
     background-color: #7969e6;
     color: #fff !important;
     border: none !important;
-    border-radius: 8px !important;
 }
 
 .subscribeInput input:focus {
@@ -514,8 +551,7 @@ input::placeholder {
 }
 
 .subscribeInput button {
-    border-top-left-radius: 8px !important;
-    border-bottom-left-radius: 8px !important;
+    border-radius: 8px;
     padding: 10px 22px;
     font-weight: 700;
     text-transform: uppercase;
@@ -614,6 +650,323 @@ input::placeholder {
     border-top: 1px solid #00000025;
 }
 
+/* ----------------------------------BooksPage------------------------ */
+
+.homeLink {
+    text-decoration: none;
+}
+
+.bookInRow,
+.bookInTables {
+    display: none;
+}
+
+.notSelected {
+    color: #00000050;
+}
+
+.inputSelected {
+    color: var(--sub-color) !important;
+}
+
+.visible {
+    display: block;
+}
+.bookInRowInput,
+.bookInTablesInput {
+    display: none;
+}
+
+
+.headTitle {
+    border-radius: 8px;
+}
+
+.headTitle i {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.headTitle p {
+    transition: all 0.3s;
+}
+
+.headTitle i:hover {
+    color: var(--sub-color) !important;
+}
+
+.headTitle p:hover {
+    color: var(--main-color) !important;
+    cursor: pointer;
+}
+
+.booksPage .saleBox {
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.bookSalary {
+    display: none;
+    transition: all 0.3s;
+}
+
+.booksPage .saleBox:hover .categoryDesc {
+    display: none;
+}
+
+.booksPage .saleBox:hover .bookSalary {
+    display: block;
+}
+
+.booksPage .saleBox:hover .starsRate {
+    display: none !important;
+}
+
+.likedIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #fff;
+    color: var(--sub-color);
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.likedIcon:hover {
+    background-color: var(--sub-color);
+    color: #fff;
+}
+
+.starsRate i {
+    color: var(--green-color);
+}
+
+.accordion-item {
+    border-radius: 8px !important;
+    margin-bottom: 12px;
+}
+
+.accBtn {
+    width: 100%;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    background-color: #eaf5f8 !important;
+}
+
+.accBtn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.nastedBtnFilter {
+    background-color: transparent;
+}
+
+.bookRowBox {
+    border-radius: 8px;
+}
+
+.heartIcon {
+    border-radius: 8px;
+    color: var(--sub-color);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.heartIcon:hover {
+    color: #fff;
+    background-color: var(--sub-color);
+}
+
+.bookRowBox .saleImg, .bookRowBox img {
+    border-radius: 8px !important;
+}
+
+.btnsDiscount button {
+    border-radius: 15px;
+    color: var(--green-color);
+    padding: 4px 10px;
+    background-color: transparent;
+    border: 1px solid var(--green-color) !important;
+    font-size: var(--text-small) !important;
+    transition: all 0.3s;
+}
+
+.btnsDiscount button:hover {
+    background-color: var(--green-color);
+    color: #fff;
+}
+
+/* ----------------------------------bookDetailsPage------------------------ */
+
+.socialLinks a {
+    padding: 3px 15px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.socialLinks p {
+    font-size: var(--text-small);
+}
+
+.whastsLink {
+    background-color: green;
+}
+
+.faceLink {
+    background-color: blue;
+}
+
+.gmailLink {
+    background-color: rgb(146, 146, 179);
+}
+
+.twitterLink {
+    background-color: rgb(182, 182, 212);
+}
+
+.disSalary {
+    background-color: var(--green-color);
+    color: #fff;
+    border-radius: 12px;
+    padding: 2px 12px !important;
+    font-size: var(--text-small);
+}
+
+.incleaseBtn {
+    border-radius: 8px;
+}
+
+.incleaseBtn i {
+    color: var(--sub-color);
+    cursor: pointer;
+}
+
+.btnsAdds button {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 15px;
+    cursor: default;
+}
+
+.freeSh {
+    color: var(--sub-color);
+}
+
+.inStock {
+    color: var(--green-color);
+}
+
+.relAddBtn {
+    background-color: transparent;
+    color: var(--sub-color);
+    font-size: var(--text-small);
+}
+
+.writerImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.writerImage img {
+    height: 100%;
+    border-radius: 50%;
+}
+.relaitedBooks h2 {
+    color: var(--main-color) !important;
+}
+
+.detailsTitle h2 {
+    cursor: pointer;
+}
+
+.relatedBookImage, .relatedBookImage img {
+    border-radius: 8px;
+}
+
+.bookDetailsServ {
+    background-color: var(--sub-bg);
+}
+
+.bookDetailsServ .icon {
+    background-color: var(--sub-color);
+    color: #fff;
+}
+
+.custReviewBox {
+    border-radius: 8px;
+}
+
+.custComments {
+    border-radius: 8px;
+}
+
+.custComments h3 {
+    color: var(--green-color);
+}
+
+.table {
+    border-radius: 8px !important;
+}
+
+.dtailsProduct th {
+    padding: 12px 15px;
+}
+
+.dtailsProduct,
+.custReview {
+    display: none;
+}
+
+.notSelected {
+    color: #00000050;
+}
+
+.btnSelected {
+    color: var(--main-color) !important;
+}
+
+.visible {
+    display: block;
+}
+
+/* ----------------------------------payment page------------------------- */
+
+.buyerInfo input, .paymentInfo input {
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 50%;
+}
+
+.buyerInfo textarea {
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.buyerInfo input:focus, .buyerInfo input:active, .paymentInfo input:active, .paymentInfo input:focus {
+    background-color: var(--sub-bg);
+}
+
+.paymentBox {
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.paymentBox:hover {
+    background-color: var(--sub-bg);
+}
+
+.paymentBox:hover i {
+    color: var(--sub-color);
+}
+
 /* ----------------------------------responsive------------------------ */
 
 @media (max-width: 1200px) {
@@ -663,6 +1016,10 @@ input::placeholder {
 
     .swiper-slide {
         max-width: 90%;
+    }
+    .bookDetailsImage {
+        width: 70% !important;
+        margin: auto;
     }
 }
 
@@ -724,9 +1081,15 @@ input::placeholder {
     .featuresOtherBooks {
         display: none;
     }
+
     .subscribeBox {
         width: 70% !important;
     }
+    .bookDetailsImage {
+        width: 65% !important;
+        margin: auto;
+    }
+    
 }
 
 @media (max-width:577px) {
@@ -784,6 +1147,7 @@ input::placeholder {
         width: 90% !important;
         margin: 0 auto;
     }
+
     .countdown {
         gap: 23px !important;
     }
@@ -796,6 +1160,7 @@ input::placeholder {
         width: 60% !important;
         margin: auto;
     }
+
     .featuredBookImage img {
         height: 300px;
     }
@@ -815,27 +1180,42 @@ input::placeholder {
     .numRateBox {
         margin: 15px 0px;
     }
+
     .subscribeBox {
         width: 80% !important;
     }
+
     .footerlogo {
         align-items: center;
         text-align: center;
     }
+
     .booksCategories {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .quickLinks {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .ourStore {
         align-items: center;
+    }
+    .buyerInfo input, .paymentInfo input {
+        width: 100% !important;
+    }
+    .bookDetailsImage {
+        width: 60% !important;
+        margin: auto;
+    }
+    form div {
+        flex-wrap: wrap;
     }
 }
 
@@ -877,6 +1257,7 @@ input::placeholder {
     .subscribeBox {
         width: 90% !important;
     }
+
     .rightReserved {
         flex-direction: column;
         align-items: center;
@@ -910,8 +1291,6 @@ input::placeholder {
     width: 100% !important;
     max-height: 350px;
 }
-
-
 
 
 
