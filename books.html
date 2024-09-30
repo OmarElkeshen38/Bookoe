@@ -96,6 +96,109 @@
         </div>
     </nav>
 
+      <!-- ------------------------- slideBar------------------------------ -->
+
+      <div class="overlay" id="overlay"></div>
+      <div class="container position-relative slideBarContainer">
+          <div class="d-flex justify-content-between py-2">
+              <a class="navbar-brand logo d-flex align-items-center gap-1" href="index.html">
+                  <div class="imgLogo p-2 d-flex align-items-center justify-content-center ms-1">
+                      <i class="fa-solid fa-swatchbook"></i>
+                  </div>
+                  <div class="logoText">
+                      <h1 class="fs-4 fw-bold m-0 p-0">عالم الكتب</h1>
+                      <p class="m-0 p-0 text-black-50">متجر بيع جميع الكتب</p>
+                  </div>
+              </a>
+              <div class="slideBar">
+                  <button id="toggle-button">
+                      <i class="fa-solid fa-bars"></i>
+                  </button>
+                  <div class="slide-bar" id="slide-bar">
+                      <button id="close-button">
+                          <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <div class="tabs">
+                          <button class="tab active" data-tab="tab1">التصنيفات</button>
+                          <button class="tab" data-tab="tab2">القائمة</button>
+                      </div>
+                      <div class="content">
+                          <div class="tab-content active" id="tab1">
+                              <ul>
+                                  <li class="d-flex justify-content-between align-items-center">
+                                      <a href="#" class="linkToSubTab">الدينية</a>
+                                      <span class="arrow" data-target="subTab1">
+                                          <i class="fa-solid fa-arrow-right"></i>
+                                      </span>
+                                  </li>
+                                  <li class="d-flex justify-content-between align-items-center">
+                                      <a href="#" class="linkToSubTab">التاريخية</a>
+                                      <span class="arrow" data-target="subTab2">
+                                          <i class="fa-solid fa-arrow-right"></i>
+                                      </span>
+                                  </li>
+                                  <li class="d-flex justify-content-between align-items-center">
+                                      <a href="#" class="linkToSubTab">العلمية</a>
+                                      <span class="arrow" data-target="subTab3">
+                                          <i class="fa-solid fa-arrow-right"></i>
+                                      </span>
+                                  </li>
+                                  <li><a href="#">الرعب</a></li>
+                                  <li><a href="#">المغامرة</a></li>
+                                  <li><a href="#">الرومانسية</a></li>
+                                  <li><a href="#">النفسية</a></li>
+                              </ul>
+                          </div>
+                          <div class="tab-content" id="tab2">
+                              <ul>
+                                  <li><a href="books.html">الكتب</a></li>
+                                  <li><a href="#">الخصومات</a></li>
+                                  <li><a href="#">الجديدة</a></li>
+                                  <li><a href="#">المهمة</a></li>
+                                  <li><a href="#">المسيطرة</a></li>
+                                  <li><a href="#">الجديدة</a></li>
+                                  <li><a href="#">المهمة</a></li>
+                                  <li><a href="#">المسيطرة</a></li>
+                              </ul>
+                          </div>
+                          <div class="tab-content" id="subTab1">
+                              <button class="back-button m-2">
+                                  <i class="fa-solid fa-circle-arrow-right fs-5"></i>
+                              </button>
+                              <ul>
+                                  <li><a href="#">كتب تشويق</a></li>
+                                  <li><a href="#">كتب رعب</a></li>
+                                  <li><a href="#">كتب دراما</a></li>
+                              </ul>
+                          </div>
+                          <div class="tab-content" id="subTab2">
+                              <button class="back-button m-2">
+                                  <i class="fa-solid fa-circle-arrow-right fs-5"></i>
+                              </button>
+                              <ul>
+                                  <li><a href="#">كتب حب</a></li>
+                                  <li><a href="#">كتب حزن</a></li>
+                                  <li><a href="#">كتب فرح</a></li>
+                              </ul>
+                          </div>
+                          <div class="tab-content" id="subTab3">
+                              <button class="back-button m-2">
+                                  <i class="fa-solid fa-circle-arrow-right fs-5"></i>
+                              </button>
+                              <ul>
+                                  <li><a href="#">كتب لعب</a></li>
+                                  <li><a href="#">كتب ضحك</a></li>
+                                  <li><a href="#">كتب جد</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+  
+
     <!-- ---------------------------Books---------------------------- -->
 
     <section class="container">

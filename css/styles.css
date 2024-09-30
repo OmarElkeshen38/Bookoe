@@ -1,1300 +1,1437 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    border: none;
-    outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
 }
 
 *::selection {
-    background-color: #6C5DD4;
-    color: #ffffff;
+  background-color: #6c5dd4;
+  color: #ffffff;
 }
 
 :root {
-    --main-color: #12142D;
-    --green-color: #FF764C;
-    --sub-color: #6C5DD4;
-    --sub-bg: #F1EEFF;
-    --text-small: 15px;
+  --main-color: #12142d;
+  --green-color: #ff764c;
+  --sub-color: #6c5dd4;
+  --sub-bg: #f1eeff;
+  --text-small: 15px;
 }
 
 body {
-    font-family: "Zain", sans-serif;
-    font-weight: 400;
-    color: var(--main-color);
-    scroll-behavior: smooth;
-    direction: rtl;
+  font-family: 'Zain', sans-serif;
+  font-weight: 400;
+  color: var(--main-color);
+  scroll-behavior: smooth;
+  direction: rtl;
 }
 
 input:focus,
 input:active {
-    border: none !important;
-    outline: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 input::placeholder {
-    font-size: var(--text-small);
-    color: #0000006c !important;
+  font-size: var(--text-small);
+  color: #0000006c !important;
 }
 
 .icon {
-    background-color: var(--sub-bg);
-    color: var(--sub-color);
-    width: 60px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
+  background-color: var(--sub-bg);
+  color: var(--sub-color);
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
 }
 
 .icon i {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .mainBtn {
-    background-color: var(--sub-color);
-    color: #fff;
-    font-size: var(--text-small);
-    border-radius: 8px;
-    font-weight: 500;
-    padding: 8px 20px !important;
-    transition: all 0.3s;
+  background-color: var(--sub-color);
+  color: #fff;
+  font-size: var(--text-small);
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 8px 20px !important;
+  transition: all 0.3s;
 }
 
 .mainBtn:hover {
-    background-color: transparent;
-    color: var(--sub-color);
-    border: 1px solid var(--sub-color);
+  background-color: transparent;
+  color: var(--sub-color);
+  border: 1px solid var(--sub-color);
 }
 
 .subBtn {
-    background-color: transparent;
-    color: var(--sub-color);
-    font-size: var(--text-small);
-    border: 1px solid var(--sub-color);
-    border-radius: 8px;
-    font-weight: 500;
-    padding: 8px 20px !important;
-    transition: all 0.3s;
+  background-color: transparent;
+  color: var(--sub-color);
+  font-size: var(--text-small);
+  border: 1px solid var(--sub-color);
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 8px 20px !important;
+  transition: all 0.3s;
 }
 
 .subBtn:hover {
-    background-color: var(--sub-color);
-    color: #fff;
-    border: none;
+  background-color: var(--sub-color);
+  color: #fff;
+  border: none;
 }
+
+/* ----------------------- SLIDEBAR----------------------------- */
+
+.slideBarContainer {
+  display: none;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+
+#toggle-button, #close-button {
+  padding: 10px 20px;
+  margin: 10px 0px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#close-button {
+  padding: 6px 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--green-color);
+  display: none !important;
+  opacity: 0;
+}
+
+.back-button {
+  background-color: transparent !important;
+}
+
+.linkToSubTab {
+  width: 85% !important;
+}
+
+.slide-bar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  /* padding: 20px 0px; */
+  z-index: 1001;
+}
+
+.slide-bar.open {
+  right: 0;
+}
+
+#close-button {
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  padding: 15px 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  /* border: 1px solid #ccc; */
+  text-align: center;
+  transition: all 0.3s;
+}
+
+
+.tab.active {
+  background-color: #e2e0e0;
+  border-bottom: 2px solid #007bff;
+  font-weight: 600;
+}
+
+.content {
+  /* border-top: 1px solid #ccc; */
+  padding-top: 10px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.slideBar li {
+  border-bottom: 1px solid #ccc;
+  padding: 0px 20px;
+}
+
+.slideBar li:last-child {
+  border-bottom: none;
+}
+
+.slideBar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.slideBar a:hover {
+  background-color: #f0f0f0;
+}
+
+.arrow {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+}
+
+
 
 /* ----------------------- NAVBAR ----------------------------- */
 
 .logo {
-    min-width: 18%;
+  min-width: 18%;
 }
 
 .imgLogo {
-    background-color: var(--sub-color);
-    color: #fff;
-    padding: 2px 5px;
-    border-radius: 6px;
+  background-color: var(--sub-color);
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 6px;
 }
 
 .navbar .logo h1 {
-    color: #12142D !important;
+  color: #12142d !important;
 }
 
 .navbar .logo p {
-    font-size: var(--text-small);
+  font-size: var(--text-small);
 }
 
 .navbar-toggler i {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .navbar form {
-    width: 60%;
-    border-radius: 8px;
+  width: 60%;
+  border-radius: 8px;
 }
 
 .navbar form input {
-    /* border: none !important; */
-    background-color: transparent !important;
-    width: 100%;
-    padding: 0px 10px;
+  /* border: none !important; */
+  background-color: transparent !important;
+  width: 100%;
+  padding: 0px 10px;
 }
 
 .navbar form input:focus {
-    border: none !important;
-    outline: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .navbar form .form-control {
-    border: none !important;
-    outline: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .form-control.border-0 {
-    border: none !important;
+  border: none !important;
 }
 
 .searchIcon {
-    color: var(--sub-color);
+  color: var(--sub-color);
 }
 
-.likedPage, .cartPage {
-    padding: 10px;
-    border-radius: 8px;
-    color: var(--main-color);
+.likedPage,
+.cartPage {
+  padding: 10px;
+  border-radius: 8px;
+  color: var(--main-color);
 }
 
-.likedPage:hover, .cartPage:hover {
-    color: var(--sub-color);
+.likedPage:hover,
+.cartPage:hover {
+  color: var(--sub-color);
 }
 
 .profileImage {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
 }
 
 .profileImage img {
-    height: 100%;
-    border-radius: 8px;
+  height: 100%;
+  border-radius: 8px;
 }
 
 .switchLang {
-    background-color: var(--sub-bg);
-    padding: 10px;
-    border-radius: 8px;
+  background-color: var(--sub-bg);
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .switchLang select {
-    background-color: var(--sub-bg);
-    cursor: pointer;
-    font-weight: bold;
+  background-color: var(--sub-bg);
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .switchLang select option {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* ----------------------------header--------------------------- */
 
 .header {
-    height: 65vh;
+  height: 65vh;
 }
 
 .backToSchool {
-    background-color: #eaf5f8;
-    /* background-image: url(../images/bg.png); */
-    background-position: center center;
-    background-size: cover;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%;
+  background-color: #eaf5f8;
+  /* background-image: url(../images/bg.png); */
+  background-position: center center;
+  background-size: cover;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
 }
 
 .prg1 {
-    color: var(--sub-color);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    margin: 0;
+  color: var(--sub-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 0;
 }
 
 .backToSchool h2 {
-    color: var(--main-color);
-    font-weight: bold;
-    margin: 0;
-    text-transform: capitalize;
+  color: var(--main-color);
+  font-weight: bold;
+  margin: 0;
+  text-transform: capitalize;
 }
 
 .backToSchool h4 {
-    color: var(--main-color);
-    margin: 0;
+  color: var(--main-color);
+  margin: 0;
 }
 
 .desc {
-    font-size: var(--text-small);
+  font-size: var(--text-small);
 }
 
 .promosBtn {
-    background-color: transparent;
-    color: var(--main-color);
-    border: 1px solid #00000044;
+  background-color: transparent;
+  color: var(--main-color);
+  border: 1px solid #00000044;
 }
 
 .bestSeller {
-    /* background-color: #a3c3cc; */
-    /* background-image: url(../images/bg.png); */
-    background-position: center center;
-    background-size: cover;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%;
-    position: relative;
+  /* background-color: #a3c3cc; */
+  /* background-image: url(../images/bg.png); */
+  background-position: center center;
+  background-size: cover;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .bgBlur {
-    height: 100% !important;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    border-radius: 12px;
+  height: 100% !important;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .bgBlur img {
-    height: 100% !important;
-    filter: blur(5px);
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 12px;
+  height: 100% !important;
+  filter: blur(5px);
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .bestSellerContent {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    text-align: center;
-    height: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  text-align: center;
+  height: 100%;
 }
 
 .bestSellerContent img {
-    border: 1px solid #fff;
-    border-radius: 12px;
-    min-height: 150px;
-    max-height: 180px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  min-height: 150px;
+  max-height: 180px;
 }
 
 .bestSellerContent h4 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .bestSellerContent p {
-    font-size: var(--text-small);
-    margin: 0;
+  font-size: var(--text-small);
+  margin: 0;
 }
 
-
 .servText h3 {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .servText p {
-    font-size: var(--text-small);
+  font-size: var(--text-small);
 }
-
-
 
 /* -------------------------------Offers-------------------------------- */
 
 .sectionTitle h3 {
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: var(--main-color);
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--main-color);
 }
 
 .sectionTitle p {
-    font-size: var(--text-small);
+  font-size: var(--text-small);
 }
 
-
 .offerBox {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .offerBox img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .offerData h2 {
-    color: var(--main-color);
-    font-weight: bold;
-    font-size: 25px;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .categories p {
-    background-color: var(--sub-bg);
-    color: var(--sub-color);
-    padding: 5px 10px;
-    border-radius: 8px;
-    font-size: var(--text-small);
+  background-color: var(--sub-bg);
+  color: var(--sub-color);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: var(--text-small);
 }
 
 .offerDesc {
-    font-size: var(--text-small);
+  font-size: var(--text-small);
 }
 
 .offerData h5 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* -------------------------------freshSale-------------------------------- */
 
 .countdown {
-    width: fit-content;
-    margin: 0 auto;
-    padding: 12px 22px;
-    border-radius: 8px;
-    border: 1px solid #0000003f;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: 1px solid #0000003f;
 }
 
 .countdown h2 {
-    color: var(--green-color);
-    font-weight: 800;
-    font-size: 38px;
+  color: var(--green-color);
+  font-weight: 800;
+  font-size: 38px;
 }
 
 .saleImg img {
-    border-radius: 8px;
-    width: 100%;
-    height: auto;
-    min-height: 220px;
-    object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  min-height: 220px;
+  object-fit: cover;
 }
 
 .saleData h3 {
-    color: var(--main-color);
-    font-weight: 700;
-    font-size: 1.2rem;
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .saleData .category {
-    color: var(--sub-color);
-    font-size: 0.9rem;
+  color: var(--sub-color);
+  font-size: 0.9rem;
 }
 
 .saleData .newSalary {
-    color: var(--sub-color);
-    font-weight: 800;
-    font-size: 1.1rem;
+  color: var(--sub-color);
+  font-weight: 800;
+  font-size: 1.1rem;
 }
 
 .oldSalary {
-    text-decoration: line-through;
-    font-size: 1rem;
+  text-decoration: line-through;
+  font-size: 1rem;
 }
-
 
 /* --------------------------------------------------------------- */
 
 .onSaleTitle {
-    position: relative;
+  position: relative;
 }
 
 .onSaleTitle h2 {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .swiper2Paginatiion {
-    position: relative;
+  position: relative;
 }
 
 .swiperControl i {
-    font-size: 16px;
-    background-color: var(--sub-bg);
-    color: var(--sub-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    border-radius: 50%;
+  font-size: 16px;
+  background-color: var(--sub-bg);
+  color: var(--sub-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 50%;
 }
 
 .inSaleImg img {
-    border-radius: 8px;
-    min-height: 250px !important;
-    /* max-height: 230px !important; */
+  border-radius: 8px;
+  min-height: 250px !important;
+  /* max-height: 230px !important; */
 }
 
 .rate {
-    color: var(--green-color);
+  color: var(--green-color);
 }
 
 /* ------------------------------featuredBook--------------------------- */
 
 .featuredBookDetails {
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .featuredBooks img {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .featuresOtherBooks img {
-    max-height: 300px;
+  max-height: 300px;
 }
 
 .featuredBooks {
-    background-color: var(--sub-bg);
+  background-color: var(--sub-bg);
 }
 
 .featuredBookIcon {
-    position: relative;
+  position: relative;
 }
 
 .bookmarkIcon {
-    color: var(--sub-color);
+  color: var(--sub-color);
 }
 
 .starIcon {
-    position: absolute;
-    right: 10px;
-    top: -8px;
-    font-size: var(--text-small);
-    background-color: var(--green-color);
-    color: #fff;
-    padding: 5px;
-    border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: -8px;
+  font-size: var(--text-small);
+  background-color: var(--green-color);
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 .featuredBookName p {
-    font-size: var(--text-small);
-    color: var(--sub-color);
+  font-size: var(--text-small);
+  color: var(--sub-color);
 }
 
 .featuredBookDesc p {
-    font-size: var(--text-small);
+  font-size: var(--text-small);
 }
 
 /* ---------------------------Testimonials---------------------------- */
 
 .testimonialSwiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .testimonialSwiperSlide {
-    background-color: var(--sub-bg);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    opacity: 0.4;
-    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+  background-color: var(--sub-bg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  opacity: 0.4;
+  transition: opacity 0.5s ease, box-shadow 0.5s ease;
 }
 
 .testimonialSwiperSlideActive {
-    opacity: 1;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  opacity: 1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .clientImage {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .clientImage img {
-    height: 100%;
-    border-radius: 50%;
+  height: 100%;
+  border-radius: 50%;
 }
-
 
 /* ----------------------------------newsDetail------------------------ */
 
 .newsImg img {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .newsDetail p {
-    font-size: var(--text-small);
+  font-size: var(--text-small);
 }
 
 /* ------------------------------------numRateBox-------------------------- */
 
 .numRateBox i {
-    color: var(--sub-color);
+  color: var(--sub-color);
 }
 
 .numRateBox h2 {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 /* ----------------------------subscribe------------------------------ */
 
 .subscribeInput {
-    background-color: #7969e6;
-    border-radius: 8px;
-    padding: 3px;
+  background-color: #7969e6;
+  border-radius: 8px;
+  padding: 3px;
 }
 
 .subscribeInput input {
-    background-color: #7969e6;
-    color: #fff !important;
-    border: none !important;
+  background-color: #7969e6;
+  color: #fff !important;
+  border: none !important;
 }
 
 .subscribeInput input:focus {
-    background-color: #7969e6;
-    border: none;
-    outline: none;
+  background-color: #7969e6;
+  border: none;
+  outline: none;
 }
 
 .subscribeInput input::placeholder {
-    color: #F1EEFF !important;
+  color: #f1eeff !important;
 }
 
 .subscribeInput button {
-    border-radius: 8px;
-    padding: 10px 22px;
-    font-weight: 700;
-    text-transform: uppercase;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .subscribe {
-    background-color: var(--sub-color);
-    display: flex;
-    justify-content: center;
-    border-radius: 8px;
+  background-color: var(--sub-color);
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
 }
 
 /* ----------------------------------footer------------------------ */
 
-
 .footer {
-    position: absolute;
+  position: absolute;
 }
 
 .footerlogo .websiteDesc {
-    font-size: var(--text-small);
-    color: #12142D;
+  font-size: var(--text-small);
+  color: #12142d;
 }
 
 .logo h1 {
-    color: #12142D !important;
+  color: #12142d !important;
 }
 
 .logo p {
-    font-size: var(--text-small);
+  font-size: var(--text-small);
 }
 
 .socialIcon i {
-    color: var(--main-color);
-    font-size: 18px;
-    padding: 8px 10px;
-    border-radius: 6px;
-    transition: all 0.3s;
-    cursor: pointer;
+  color: var(--main-color);
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .socialIcon i:hover {
-    background-color: #eaf5f8;
-    color: var(--sub-color);
+  background-color: #eaf5f8;
+  color: var(--sub-color);
 }
 
 .booksCategories h2 {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .booksCategories a {
-    color: var(--main-color);
-    text-decoration: none;
-    font-weight: 600;
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .quickLinks h2 {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .quickLinks a {
-    color: var(--main-color);
-    text-decoration: none;
-    font-weight: 600;
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .locationLink {
-    height: 120px;
-    min-height: 120px;
-    border-radius: 8px;
+  height: 120px;
+  min-height: 120px;
+  border-radius: 8px;
 }
 
 .contactInfo i {
-    color: var(--sub-color);
-    font-size: 18px;
+  color: var(--sub-color);
+  font-size: 18px;
 }
 
 .contactInfo p {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .rightReserved {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .rightReserved p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .rightReserved span {
-    color: var(--sub-color);
+  color: var(--sub-color);
 }
 
 .rightReserved {
-    padding-top: 10px;
-    border-top: 1px solid #00000025;
+  padding-top: 10px;
+  border-top: 1px solid #00000025;
 }
 
 /* ----------------------------------BooksPage------------------------ */
 
 .homeLink {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .bookInRow,
 .bookInTables {
-    display: none;
+  display: none;
 }
 
 .notSelected {
-    color: #00000050;
+  color: #00000050;
 }
 
 .inputSelected {
-    color: var(--sub-color) !important;
+  color: var(--sub-color) !important;
 }
 
 .visible {
-    display: block;
+  display: block;
 }
 .bookInRowInput,
 .bookInTablesInput {
-    display: none;
+  display: none;
 }
 
-
 .headTitle {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .headTitle i {
-    cursor: pointer;
-    transition: all 0.3s;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .headTitle p {
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .headTitle i:hover {
-    color: var(--sub-color) !important;
+  color: var(--sub-color) !important;
 }
 
 .headTitle p:hover {
-    color: var(--main-color) !important;
-    cursor: pointer;
+  color: var(--main-color) !important;
+  cursor: pointer;
 }
 
 .booksPage .saleBox {
-    padding: 15px;
-    border-radius: 8px;
-    cursor: pointer;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-
 .bookSalary {
-    display: none;
-    transition: all 0.3s;
+  display: none;
+  transition: all 0.3s;
 }
 
 .booksPage .saleBox:hover .categoryDesc {
-    display: none;
+  display: none;
 }
 
 .booksPage .saleBox:hover .bookSalary {
-    display: block;
+  display: block;
 }
 
 .booksPage .saleBox:hover .starsRate {
-    display: none !important;
+  display: none !important;
 }
 
 .likedIcon {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    background-color: #fff;
-    color: var(--sub-color);
-    padding: 10px;
-    border-radius: 8px;
-    transition: all 0.3s;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #fff;
+  color: var(--sub-color);
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s;
 }
 
 .likedIcon:hover {
-    background-color: var(--sub-color);
-    color: #fff;
+  background-color: var(--sub-color);
+  color: #fff;
 }
 
 .starsRate i {
-    color: var(--green-color);
+  color: var(--green-color);
 }
 
 .accordion-item {
-    border-radius: 8px !important;
-    margin-bottom: 12px;
+  border-radius: 8px !important;
+  margin-bottom: 12px;
 }
 
 .accBtn {
-    width: 100%;
-    border-top-left-radius: 8px !important;
-    border-top-right-radius: 8px !important;
-    background-color: #eaf5f8 !important;
+  width: 100%;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  background-color: #eaf5f8 !important;
 }
 
 .accBtn:focus {
-    outline: none !important;
-    box-shadow: none;
+  outline: none !important;
+  box-shadow: none;
 }
 
 .nastedBtnFilter {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .bookRowBox {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .heartIcon {
-    border-radius: 8px;
-    color: var(--sub-color);
-    cursor: pointer;
-    transition: all 0.3s;
+  border-radius: 8px;
+  color: var(--sub-color);
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .heartIcon:hover {
-    color: #fff;
-    background-color: var(--sub-color);
+  color: #fff;
+  background-color: var(--sub-color);
 }
 
-.bookRowBox .saleImg, .bookRowBox img {
-    border-radius: 8px !important;
+.bookRowBox .saleImg,
+.bookRowBox img {
+  border-radius: 8px !important;
 }
 
 .btnsDiscount button {
-    border-radius: 15px;
-    color: var(--green-color);
-    padding: 4px 10px;
-    background-color: transparent;
-    border: 1px solid var(--green-color) !important;
-    font-size: var(--text-small) !important;
-    transition: all 0.3s;
+  border-radius: 15px;
+  color: var(--green-color);
+  padding: 4px 10px;
+  background-color: transparent;
+  border: 1px solid var(--green-color) !important;
+  font-size: var(--text-small) !important;
+  transition: all 0.3s;
 }
 
 .btnsDiscount button:hover {
-    background-color: var(--green-color);
-    color: #fff;
+  background-color: var(--green-color);
+  color: #fff;
 }
 
 /* ----------------------------------bookDetailsPage------------------------ */
 
 .socialLinks a {
-    padding: 3px 15px;
-    border-radius: 10px;
-    color: #fff;
-    text-decoration: none;
+  padding: 3px 15px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .socialLinks p {
-    font-size: var(--text-small);
+  font-size: var(--text-small);
 }
 
 .whastsLink {
-    background-color: green;
+  background-color: green;
 }
 
 .faceLink {
-    background-color: blue;
+  background-color: blue;
 }
 
 .gmailLink {
-    background-color: rgb(146, 146, 179);
+  background-color: rgb(146, 146, 179);
 }
 
 .twitterLink {
-    background-color: rgb(182, 182, 212);
+  background-color: rgb(182, 182, 212);
 }
 
 .disSalary {
-    background-color: var(--green-color);
-    color: #fff;
-    border-radius: 12px;
-    padding: 2px 12px !important;
-    font-size: var(--text-small);
+  background-color: var(--green-color);
+  color: #fff;
+  border-radius: 12px;
+  padding: 2px 12px !important;
+  font-size: var(--text-small);
 }
 
 .incleaseBtn {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .incleaseBtn i {
-    color: var(--sub-color);
-    cursor: pointer;
+  color: var(--sub-color);
+  cursor: pointer;
 }
 
 .btnsAdds button {
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 5px 15px;
-    cursor: default;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 15px;
+  cursor: default;
 }
 
 .freeSh {
-    color: var(--sub-color);
+  color: var(--sub-color);
 }
 
 .inStock {
-    color: var(--green-color);
+  color: var(--green-color);
 }
 
 .relAddBtn {
-    background-color: transparent;
-    color: var(--sub-color);
-    font-size: var(--text-small);
+  background-color: transparent;
+  color: var(--sub-color);
+  font-size: var(--text-small);
 }
 
 .writerImage {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .writerImage img {
-    height: 100%;
-    border-radius: 50%;
+  height: 100%;
+  border-radius: 50%;
 }
 .relaitedBooks h2 {
-    color: var(--main-color) !important;
+  color: var(--main-color) !important;
 }
 
 .detailsTitle h2 {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.relatedBookImage, .relatedBookImage img {
-    border-radius: 8px;
+.relatedBookImage,
+.relatedBookImage img {
+  border-radius: 8px;
 }
 
 .bookDetailsServ {
-    background-color: var(--sub-bg);
+  background-color: var(--sub-bg);
 }
 
 .bookDetailsServ .icon {
-    background-color: var(--sub-color);
-    color: #fff;
+  background-color: var(--sub-color);
+  color: #fff;
 }
 
 .custReviewBox {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .custComments {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .custComments h3 {
-    color: var(--green-color);
+  color: var(--green-color);
 }
 
 .table {
-    border-radius: 8px !important;
+  border-radius: 8px !important;
 }
 
 .dtailsProduct th {
-    padding: 12px 15px;
+  padding: 12px 15px;
 }
 
 .dtailsProduct,
 .custReview {
-    display: none;
+  display: none;
 }
 
 .notSelected {
-    color: #00000050;
+  color: #00000050;
 }
 
 .btnSelected {
-    color: var(--main-color) !important;
+  color: var(--main-color) !important;
 }
 
 .visible {
-    display: block;
+  display: block;
 }
 
 /* ----------------------------------payment page------------------------- */
 
-.buyerInfo input, .paymentInfo input {
-    border-radius: 8px;
-    padding: 8px 12px;
-    width: 50%;
+.buyerInfo input,
+.paymentInfo input {
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 50%;
 }
 
 .buyerInfo textarea {
-    border-radius: 8px;
-    padding: 8px 12px;
+  border-radius: 8px;
+  padding: 8px 12px;
 }
 
-.buyerInfo input:focus, .buyerInfo input:active, .paymentInfo input:active, .paymentInfo input:focus {
-    background-color: var(--sub-bg);
+.buyerInfo input:focus,
+.buyerInfo input:active,
+.paymentInfo input:active,
+.paymentInfo input:focus {
+  background-color: var(--sub-bg);
 }
 
 .paymentBox {
-    cursor: pointer;
-    border-radius: 8px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 .paymentBox:hover {
-    background-color: var(--sub-bg);
+  background-color: var(--sub-bg);
 }
 
 .paymentBox:hover i {
-    color: var(--sub-color);
+  color: var(--sub-color);
 }
 
 /* ----------------------------------responsive------------------------ */
 
 @media (max-width: 1200px) {
-    .saleData h3 {
-        font-size: 1.1rem;
-    }
+  .saleData h3 {
+    font-size: 1.1rem;
+  }
 
-    .saleData .newSalary {
-        font-size: 1rem;
-    }
+  .saleData .newSalary {
+    font-size: 1rem;
+  }
 
-    .saleData .category,
-    .oldSalary {
-        font-size: 0.85rem;
-    }
+  .saleData .category,
+  .oldSalary {
+    font-size: 0.85rem;
+  }
 }
 
-@media (max-width:995px) {
-    .navbar form {
-        width: 100%;
-    }
+@media (max-width: 995px) {
+  .slideBarContainer {
+    display: block;
+  }
 
-    .navbar form input {
-        padding: 0px 8px;
-    }
+  .navbar {
+    display: none;
+  }
 
-    .navbar-nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .navbar form {
+    width: 100%;
+  }
 
-    .backToSchoolContainer {
-        width: 100% !important;
-    }
+  .navbar form input {
+    padding: 0px 8px;
+  }
 
-    .bestSellerContainer {
-        display: none;
-    }
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .saleData {
-        padding: 1rem;
-    }
+  .backToSchoolContainer {
+    width: 100% !important;
+  }
 
-    .saleImg img {
-        height: 180px;
-    }
+  .bestSellerContainer {
+    display: none;
+  }
 
-    .swiper-slide {
-        max-width: 90%;
-    }
-    .bookDetailsImage {
-        width: 70% !important;
-        margin: auto;
-    }
+  .saleData {
+    padding: 1rem;
+  }
+
+  .saleImg img {
+    height: 180px;
+  }
+
+  .swiper-slide {
+    max-width: 90%;
+  }
+  .bookDetailsImage {
+    width: 70% !important;
+    margin: auto;
+  }
 }
 
-@media (max-width:768px) {
-    .navbar .logoText {
-        display: none;
-    }
+@media (max-width: 768px) {
 
-    .navbar form {
-        width: 100%;
-    }
+  .navbar .logoText {
+    display: none;
+  }
 
-    .navbar form {
-        margin: 15px 0px;
-    }
+  .navbar form {
+    width: 100%;
+  }
 
-    .backToSchool {
-        padding: 22px 20px !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .navbar form {
+    margin: 15px 0px;
+  }
 
-    .backToSchoolContent {
-        width: 100% !important;
-        align-items: center;
-        text-align: center;
-    }
+  .backToSchool {
+    padding: 22px 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .sectionTitle {
-        width: 75% !important;
-    }
+  .backToSchoolContent {
+    width: 100% !important;
+    align-items: center;
+    text-align: center;
+  }
 
-    .saleImg img {
-        height: 150px;
-    }
+  .sectionTitle {
+    width: 75% !important;
+  }
 
-    .swiper-slide {
-        max-width: 90%;
-    }
+  .saleImg img {
+    height: 150px;
+  }
 
-    .saleData h3 {
-        font-size: 1rem;
-    }
+  .swiper-slide {
+    max-width: 90%;
+  }
 
-    .saleData .newSalary {
-        font-size: 0.9rem;
-    }
+  .saleData h3 {
+    font-size: 1rem;
+  }
 
-    .saleData .category,
-    .oldSalary {
-        font-size: 0.8rem;
-    }
+  .saleData .newSalary {
+    font-size: 0.9rem;
+  }
 
-    .featuredBooksTitle {
-        width: 80% !important;
-    }
+  .saleData .category,
+  .oldSalary {
+    font-size: 0.8rem;
+  }
 
-    .featuresOtherBooks {
-        display: none;
-    }
+  .featuredBooksTitle {
+    width: 80% !important;
+  }
 
-    .subscribeBox {
-        width: 70% !important;
-    }
-    .bookDetailsImage {
-        width: 65% !important;
-        margin: auto;
-    }
-    
+  .featuresOtherBooks {
+    display: none;
+  }
+
+  .subscribeBox {
+    width: 70% !important;
+  }
+  .bookDetailsImage {
+    width: 65% !important;
+    margin: auto;
+  }
 }
 
-@media (max-width:577px) {
-    .navbar form {
-        display: block;
-        width: 100%;
-    }
+@media (max-width: 577px) {
+  .navbar form {
+    display: block;
+    width: 100%;
+  }
 
-    .imgLogo {
-        padding: 2px 4px;
-    }
+  .imgLogo {
+    padding: 2px 4px;
+  }
 
-    .navbar form input {
-        padding: 0 5px;
-        width: calc(100% - 40px);
-    }
+  .navbar form input {
+    padding: 0 5px;
+    width: calc(100% - 40px);
+  }
 
-    .navbar-nav {
-        width: 100%;
-        justify-content: space-around;
-    }
+  .navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+  }
 
-    .saleImg img {
-        height: 130px;
-        min-height: 150px;
-    }
+  .saleImg img {
+    height: 130px;
+    min-height: 150px;
+  }
 
-    .swiper-slide {
-        max-width: 100%;
-    }
+  .swiper-slide {
+    max-width: 100%;
+  }
 
-    .saleData {
-        padding: 0.8rem;
-    }
+  .saleData {
+    padding: 0.8rem;
+  }
 
-    .saleData h3 {
-        font-size: 0.9rem;
-    }
+  .saleData h3 {
+    font-size: 0.9rem;
+  }
 
-    .saleData .newSalary {
-        font-size: 0.8rem;
-    }
+  .saleData .newSalary {
+    font-size: 0.8rem;
+  }
 
-    .saleData .category,
-    .oldSalary {
-        font-size: 0.75rem;
-    }
+  .saleData .category,
+  .oldSalary {
+    font-size: 0.75rem;
+  }
 
-    .saleImg {
-        width: 90% !important;
-        margin: 0 auto;
-    }
+  .saleImg {
+    width: 90% !important;
+    margin: 0 auto;
+  }
 
-    .inSaleImg {
-        width: 90% !important;
-        margin: 0 auto;
-    }
+  .inSaleImg {
+    width: 90% !important;
+    margin: 0 auto;
+  }
 
-    .countdown {
-        gap: 23px !important;
-    }
+  .countdown {
+    gap: 23px !important;
+  }
 
-    .featuredBooksTitle {
-        width: 90% !important;
-    }
+  .featuredBooksTitle {
+    width: 90% !important;
+  }
 
-    .featuredBookImage {
-        width: 60% !important;
-        margin: auto;
-    }
+  .featuredBookImage {
+    width: 60% !important;
+    margin: auto;
+  }
 
-    .featuredBookImage img {
-        height: 300px;
-    }
+  .featuredBookImage img {
+    height: 300px;
+  }
 
-    .featuredBookDetTit {
-        margin-top: 20px;
-    }
+  .featuredBookDetTit {
+    margin-top: 20px;
+  }
 
-    .saleImg img {
-        min-height: 180px !important;
-    }
+  .saleImg img {
+    min-height: 180px !important;
+  }
 
-    .inSaleImg img {
-        min-height: 180px !important;
-    }
+  .inSaleImg img {
+    min-height: 180px !important;
+  }
 
-    .numRateBox {
-        margin: 15px 0px;
-    }
+  .numRateBox {
+    margin: 15px 0px;
+  }
 
-    .subscribeBox {
-        width: 80% !important;
-    }
+  .subscribeBox {
+    width: 80% !important;
+  }
 
-    .footerlogo {
-        align-items: center;
-        text-align: center;
-    }
+  .footerlogo {
+    align-items: center;
+    text-align: center;
+  }
 
-    .booksCategories {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .booksCategories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .quickLinks {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .quickLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .ourStore {
-        align-items: center;
-    }
-    .buyerInfo input, .paymentInfo input {
-        width: 100% !important;
-    }
-    .bookDetailsImage {
-        width: 60% !important;
-        margin: auto;
-    }
-    form div {
-        flex-wrap: wrap;
-    }
+  .ourStore {
+    align-items: center;
+  }
+  .buyerInfo input,
+  .paymentInfo input {
+    width: 100% !important;
+  }
+  .bookDetailsImage {
+    width: 60% !important;
+    margin: auto;
+  }
+  form div {
+    flex-wrap: wrap;
+  }
 }
 
-@media (max-width:450px) {
-    .sectionTitle {
-        width: 90% !important;
-    }
+@media (max-width: 450px) {
+  .sectionTitle {
+    width: 90% !important;
+  }
 
-    .saleImg {
-        width: 100% !important;
-        margin: 0 auto;
-    }
+  .saleImg {
+    width: 100% !important;
+    margin: 0 auto;
+  }
 
-    .inSaleImg {
-        width: 100% !important;
-        margin: 0 auto;
-    }
+  .inSaleImg {
+    width: 100% !important;
+    margin: 0 auto;
+  }
 
-    .text-cente {
-        text-align: center;
-    }
+  .text-cente {
+    text-align: center;
+  }
 
-    .details {
-        flex-direction: column;
-    }
+  .details {
+    flex-direction: column;
+  }
 
-    .saleImg img {
-        min-height: 255px !important;
-    }
+  .saleImg img {
+    min-height: 255px !important;
+  }
 
-    .inSaleImg img {
-        min-height: 255px !important;
-    }
+  .inSaleImg img {
+    min-height: 255px !important;
+  }
 
-    .featuredBooksTitle {
-        width: 95% !important;
-    }
+  .featuredBooksTitle {
+    width: 95% !important;
+  }
 
-    .subscribeBox {
-        width: 90% !important;
-    }
+  .subscribeBox {
+    width: 90% !important;
+  }
 
-    .rightReserved {
-        flex-direction: column;
-        align-items: center;
-    }
+  .rightReserved {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-
 
 .mySwiper3 {
-    width: 350px;
-    height: 350px;
-    /* position: absolute; */
-    /* left: 50%; */
-    /* top: 50%; */
-    /* margin-left: -150px; */
-    /* margin-top: -150px; */
+  width: 350px;
+  height: 350px;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* top: 50%; */
+  /* margin-left: -150px; */
+  /* margin-top: -150px; */
 }
 
 .mySwiper3 img {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .swiperSide {
-    background-position: center;
-    background-size: cover;
-    border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
 }
 
 .swiperSide img {
-    display: block;
-    width: 100% !important;
-    max-height: 350px;
+  display: block;
+  width: 100% !important;
+  max-height: 350px;
 }
 
-
-
-
 .servicesPayment {
-    background-color: var(--sub-bg);
+  background-color: var(--sub-bg);
 }
